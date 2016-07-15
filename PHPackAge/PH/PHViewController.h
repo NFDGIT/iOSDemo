@@ -17,6 +17,13 @@
 */
 -(UILabel *)getColorLabel:(UILabel *)label stringAndColor:(NSDictionary *)dict;
 
+/*
+ *获得 文本view 的大小
+ */
+ -(CGSize)Text:(NSString *)text Size:(CGSize)size Font:(CGFloat)fone;
 
-
+/*
+ *
+ */
+-(void)showNoticeWithSting:(NSString *)notice;
 @end

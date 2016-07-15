@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    [self showNoticeWithSting:@"hello"];
     // Do any additional setup after loading the view.
 }
 
