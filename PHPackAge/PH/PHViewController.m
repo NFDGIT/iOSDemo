@@ -38,7 +38,15 @@
     label.attributedText=attributeString;
     return label;
 }
-
+-(UILabel *)getDeleteLineWithLabel:(UILabel *)label{
+    
+    NSMutableAttributedString * attributeString=[[NSMutableAttributedString alloc]initWithAttributedString:label.attributedText];
+    
+    NSNumber *nuber = [[NSNumber alloc]initWithLong:(NSUnderlinePatternSolid |NSUnderlineStyleSingle)];
+    [attributeString addAttribute:NSStrikethroughStyleAttributeName value:nuber range:NSMakeRange(0, label.text.length)];
+    label.attributedText=attributeString;
+    return label;
+}
 
 -(CGSize)Text:(NSString *)text Size:(CGSize)size Font:(CGFloat)fone{
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
@@ -46,24 +54,35 @@
     NSDictionary *attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:fone], NSParagraphStyleAttributeName:paragraphStyle.copy};
     return   [text boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size;
 }
--(void)showNoticeWithSting:(NSString *)notice{
+-(void)showPromptBoxWithSting:(NSString *)prompt{
     UILabel * noticeLabel=[[UILabel alloc]init];
-    noticeLabel.text=notice;
+    noticeLabel.text=prompt;
     noticeLabel.font=[UIFont systemFontOfSize:13*self.view.scale];
-    noticeLabel.size=[self Text:notice Size:CGSizeMake(Swidth/2, 2000) Font:13*self.view.scale];
+    noticeLabel.size=[self Text:prompt Size:CGSizeMake(sWidth/2, 2000) Font:13*self.view.scale];
     noticeLabel.height=noticeLabel.height+20*self.view.scale;
     noticeLabel.width=noticeLabel.width+20*self.view.scale;
+    noticeLabel.numberOfLines=0;
+    noticeLabel.layer.cornerRadius=5*self.view.scale;
+    noticeLabel.layer.masksToBounds=YES;
     noticeLabel.textAlignment=NSTextAlignmentCenter;
-    
+//    noticeLabel.alpha=0.8;
     noticeLabel.backgroundColor=[UIColor grayColor];
     
     noticeLabel.center=self.view.center;
     [self.view addSubview:noticeLabel];
-    [UIView animateWithDuration:0.5 delay:2 options:UIViewAnimationOptionTransitionNone animations:^{
+    [UIView animateWithDuration:0.5 delay:1 options:UIViewAnimationOptionTransitionNone animations:^{
         noticeLabel.alpha=0;
     } completion:^(BOOL finished) {
         [noticeLabel removeFromSuperview];
     }];
+}
+-(void)showAlertWithTitle:(NSString *)title content:(NSString *)content{
+    UIAlertController * alert=[UIAlertController alertControllerWithTitle:title message:content preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction * action1=[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+       
+    }];
+    [alert addAction:action1];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 @end

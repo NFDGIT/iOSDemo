@@ -17,9 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UIButton * btn=[[UIButton alloc]initWithFrame:CGRectMake(100, 100, 50, 30)];
+    btn.backgroundColor=[UIColor redColor];
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     
-    [self showNoticeWithSting:@"hello"];
+  
     // Do any additional setup after loading the view.
+}
+-(void)btnClick:(UIButton *)sender{
+//      [self showPromptBoxWithSting:@"hellof"];
+    [self showAlertWithTitle:nil content:@"内存不足"];
+    
 }
 
 - (void)didReceiveMemoryWarning {

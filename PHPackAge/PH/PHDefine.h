@@ -11,8 +11,10 @@
 
 #pragma mark -- 屏幕尺寸
 #import "UIViewAdditions.h"
-#define Swidth     [UIScreen mainScreen].bounds.size.width
-#define Sheight    [UIScreen mainScreen].bounds.size.height
+#define sWidth     [UIScreen mainScreen].bounds.size.width
+#define sHeight    [UIScreen mainScreen].bounds.size.height
+
+
 
 #pragma mark -- Color
 #define BGColor  [UIColor whiteColor]

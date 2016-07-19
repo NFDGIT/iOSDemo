@@ -16,14 +16,18 @@
 *获得 含有彩色文字的 UILabel
 */
 -(UILabel *)getColorLabel:(UILabel *)label stringAndColor:(NSDictionary *)dict;
-
 /*
- *获得 文本view 的大小
+ *获得下划线
  */
+-(UILabel *)getDeleteLineWithLabel:(UILabel *)label;
+/*
+*获得 文本view 的大小
+*/
  -(CGSize)Text:(NSString *)text Size:(CGSize)size Font:(CGFloat)fone;
 
 /*
- *
- */
--(void)showNoticeWithSting:(NSString *)notice;
+*显示 提示 框
+*/
+-(void)showAlertWithTitle:(NSString *)title content:(NSString *)content;
+-(void)showPromptBoxWithSting:(NSString *)prompt;
 @end
