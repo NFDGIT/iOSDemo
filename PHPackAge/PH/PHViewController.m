@@ -7,7 +7,7 @@
 //
 
 #import "PHViewController.h"
-#import "PHDefine.h"
+
 
 @interface PHViewController ()
 
@@ -44,6 +44,14 @@
     
     NSNumber *nuber = [[NSNumber alloc]initWithLong:(NSUnderlinePatternSolid |NSUnderlineStyleSingle)];
     [attributeString addAttribute:NSStrikethroughStyleAttributeName value:nuber range:NSMakeRange(0, label.text.length)];
+    label.attributedText=attributeString;
+    return label;
+}
+-(UILabel *)changeLabel:(UILabel *)label ParagraphSpace:(CGFloat )space{
+    NSMutableAttributedString * attributeString=[[NSMutableAttributedString alloc]initWithAttributedString:label.attributedText];
+    NSMutableParagraphStyle * style=[[NSMutableParagraphStyle alloc]init];
+    style.paragraphSpacing=space;
+    [attributeString addAttribute:NSParagraphStyleAttributeName value:style range:NSMakeRange(0, label.text.length)];
     label.attributedText=attributeString;
     return label;
 }

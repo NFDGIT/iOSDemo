@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A40CB671D5AB2BB00BF7A80 /* UIImage+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A40CB661D5AB2BB00BF7A80 /* UIImage+Helper.m */; };
+		2A40CB6A1D5AC19100BF7A80 /* PHCalendarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A40CB691D5AC19100BF7A80 /* PHCalendarItem.m */; };
+		2A40CB6C1D5AD74800BF7A80 /* 22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A40CB6B1D5AD74800BF7A80 /* 22.jpg */; };
+		2A6886901D59AFAF00DD239C /* PHCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A68868F1D59AFAF00DD239C /* PHCalendar.m */; };
+		2A6886991D59B09C00DD239C /* PHCalendarContentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6886981D59B09C00DD239C /* PHCalendarContentVC.m */; };
 		2A6FC3B01D2DF1430006CBE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FC3AF1D2DF1430006CBE2 /* main.m */; };
 		2A6FC3B31D2DF1430006CBE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FC3B21D2DF1430006CBE2 /* AppDelegate.m */; };
 		2A6FC3B91D2DF1430006CBE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6FC3B71D2DF1430006CBE2 /* Main.storyboard */; };
@@ -19,6 +24,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A40CB651D5AB2BB00BF7A80 /* UIImage+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Helper.h"; sourceTree = "<group>"; };
+		2A40CB661D5AB2BB00BF7A80 /* UIImage+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Helper.m"; sourceTree = "<group>"; };
+		2A40CB681D5AC19100BF7A80 /* PHCalendarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHCalendarItem.h; sourceTree = "<group>"; };
+		2A40CB691D5AC19100BF7A80 /* PHCalendarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHCalendarItem.m; sourceTree = "<group>"; };
+		2A40CB6B1D5AD74800BF7A80 /* 22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 22.jpg; sourceTree = "<group>"; };
+		2A68868E1D59AFAF00DD239C /* PHCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHCalendar.h; sourceTree = "<group>"; };
+		2A68868F1D59AFAF00DD239C /* PHCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHCalendar.m; sourceTree = "<group>"; };
+		2A6886971D59B09C00DD239C /* PHCalendarContentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHCalendarContentVC.h; sourceTree = "<group>"; };
+		2A6886981D59B09C00DD239C /* PHCalendarContentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHCalendarContentVC.m; sourceTree = "<group>"; };
 		2A6FC3AB1D2DF1430006CBE2 /* PHPackAge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHPackAge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6FC3AF1D2DF1430006CBE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A6FC3B11D2DF1430006CBE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -49,6 +63,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A68868D1D59AF4300DD239C /* 日历 */ = {
+			isa = PBXGroup;
+			children = (
+				2A68868E1D59AFAF00DD239C /* PHCalendar.h */,
+				2A68868F1D59AFAF00DD239C /* PHCalendar.m */,
+				2A6886971D59B09C00DD239C /* PHCalendarContentVC.h */,
+				2A6886981D59B09C00DD239C /* PHCalendarContentVC.m */,
+				2A40CB681D5AC19100BF7A80 /* PHCalendarItem.h */,
+				2A40CB691D5AC19100BF7A80 /* PHCalendarItem.m */,
+			);
+			name = "日历";
+			sourceTree = "<group>";
+		};
 		2A6FC3A21D2DF1430006CBE2 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +95,7 @@
 		2A6FC3AD1D2DF1430006CBE2 /* PHPackAge */ = {
 			isa = PBXGroup;
 			children = (
+				2A40CB6B1D5AD74800BF7A80 /* 22.jpg */,
 				2A6FC3C51D2DF16E0006CBE2 /* PH */,
 				2A6FC3B11D2DF1430006CBE2 /* AppDelegate.h */,
 				2A6FC3B21D2DF1430006CBE2 /* AppDelegate.m */,
@@ -93,6 +121,9 @@
 		2A6FC3C51D2DF16E0006CBE2 /* PH */ = {
 			isa = PBXGroup;
 			children = (
+				2A40CB651D5AB2BB00BF7A80 /* UIImage+Helper.h */,
+				2A40CB661D5AB2BB00BF7A80 /* UIImage+Helper.m */,
+				2A68868D1D59AF4300DD239C /* 日历 */,
 				2A6FC3C61D2DF16E0006CBE2 /* PHCellView.h */,
 				2A6FC3C71D2DF16E0006CBE2 /* PHCellView.m */,
 				2A6FC3C81D2DF16E0006CBE2 /* PHDefine.h */,
@@ -162,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A6FC3BE1D2DF1430006CBE2 /* LaunchScreen.storyboard in Resources */,
+				2A40CB6C1D5AD74800BF7A80 /* 22.jpg in Resources */,
 				2A6FC3BB1D2DF1430006CBE2 /* Assets.xcassets in Resources */,
 				2A6FC3B91D2DF1430006CBE2 /* Main.storyboard in Resources */,
 			);
@@ -174,11 +206,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A40CB671D5AB2BB00BF7A80 /* UIImage+Helper.m in Sources */,
 				2A6FC3D51D2DF1950006CBE2 /* ViewController.m in Sources */,
+				2A6886901D59AFAF00DD239C /* PHCalendar.m in Sources */,
 				2A6FC3B31D2DF1430006CBE2 /* AppDelegate.m in Sources */,
 				2A6FC3CF1D2DF16E0006CBE2 /* UIViewAdditions.m in Sources */,
 				2A6FC3CD1D2DF16E0006CBE2 /* PHCellView.m in Sources */,
 				2A6FC3B01D2DF1430006CBE2 /* main.m in Sources */,
+				2A6886991D59B09C00DD239C /* PHCalendarContentVC.m in Sources */,
+				2A40CB6A1D5AC19100BF7A80 /* PHCalendarItem.m in Sources */,
 				2A6FC3CE1D2DF16E0006CBE2 /* PHViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +364,7 @@
 				2A6FC3C41D2DF1430006CBE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

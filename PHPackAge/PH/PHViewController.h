@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "PHDefine.h"
+#import "UIImage+Helper.h"
+
 @interface PHViewController : UIViewController
 
 
@@ -21,9 +23,19 @@
  */
 -(UILabel *)getDeleteLineWithLabel:(UILabel *)label;
 /*
+ *
+ */
+-(UILabel *)changeLabel:(UILabel *)label ParagraphSpace:(CGFloat )space;
+
+
+
+/*
 *获得 文本view 的大小
 */
  -(CGSize)Text:(NSString *)text Size:(CGSize)size Font:(CGFloat)fone;
+
+
+
 
 /*
 *显示 提示 框
