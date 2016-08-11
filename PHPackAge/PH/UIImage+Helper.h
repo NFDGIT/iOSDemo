@@ -32,4 +32,8 @@
  *获取图片某个点的RGBA值
  */
 +(NSMutableArray *)getImagePixel:(UIImage *)image point:(CGPoint)apoint;
+/*
+ *压缩图片 压缩后最多只有100k
+ */
+-(UIImage *) scaleImage: (UIImage *)image;
 @end

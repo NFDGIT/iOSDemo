@@ -297,4 +297,26 @@
     }
     return byteArray;
 }
+/*
+ *压缩图片 压缩后最多只有100k
+ */
+-(UIImage *) scaleImage: (UIImage *)image
+{
+    float scaleBy;
+    if (image.size.width>1000) {
+        scaleBy = 1000/image.size.width;
+    }else{
+        scaleBy= 1.0;
+    }
+    CGSize size = CGSizeMake(image.size.width * scaleBy, image.size.height * scaleBy);
+    UIGraphicsBeginImageContext(size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGAffineTransform transform = CGAffineTransformIdentity;
+    transform = CGAffineTransformScale(transform, scaleBy, scaleBy);
+    CGContextConcatCTM(context, transform);
+    [image drawAtPoint:CGPointMake(0.0f, 0.0f)];
+    UIImage *newimg = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newimg;
+}
 @end

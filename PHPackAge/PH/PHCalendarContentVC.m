@@ -56,6 +56,7 @@
         item.layer.borderColor=self.view.backgroundColor.CGColor;
         item.layer.borderWidth=5;
         item.layer.masksToBounds=YES;
+       
         item.day=(NSInteger)i-_dayOfWeekOfFirstDay+2;
         [item setBackgroundImage:[UIImage ImageForColor:[UIColor lightGrayColor]] forState:UIControlStateNormal];
         [item setBackgroundImage:[UIImage ImageForColor:[UIColor redColor]] forState:UIControlStateSelected];
@@ -69,7 +70,6 @@
         
         if ([[self getDayWithString:dateString] isEqualToDate:[self nowDate]]) {
             item.isToday=YES;
-//            [item setBackgroundImage:[UIImage ImageForColor:[UIColor redColor]] forState:UIControlStateNormal];
         }
         
          [_contentScroll addSubview:item];
@@ -88,7 +88,6 @@
                     return YES;
                 }
             }
-            
         }
     }
     return NO;
@@ -136,6 +135,7 @@
     NSRange range = [[NSCalendar currentCalendar] rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:[self getDayWithString:dateString]];
     return range.length;
 }
+// 根据字符串 获取对应的天
 -(NSDate *)getDayWithString:(NSString *)dayString{
     NSDateFormatter * fo=[NSDateFormatter new];
     [fo setDateFormat:@"yyyy-MM-dd"];
@@ -143,6 +143,7 @@
     NSDate * date1=[fo dateFromString:dayString];
     return date1;
 }
+// 获取当前天
 -(NSDate *)nowDate{
 
     NSDateFormatter * fo=[[NSDateFormatter alloc]init];

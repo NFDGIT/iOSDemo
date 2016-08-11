@@ -8,12 +8,15 @@
 
 #ifndef PHDefine_h
 #define PHDefine_h
+#import "UIImage+Helper.h"
+#import "UIViewAdditions.h"
+
 
 #define selectedDaySet @"selectedDaySet"
 
 
 #pragma mark -- 屏幕尺寸
-#import "UIViewAdditions.h"
+
 #define sWidth     [UIScreen mainScreen].bounds.size.width
 #define sHeight    [UIScreen mainScreen].bounds.size.height
 

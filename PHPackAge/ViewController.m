@@ -31,35 +31,29 @@
     
     UIImageView * imgView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"22.jpg"]];
     imgView.frame=CGRectMake(100, 200, 300, 300);
-    [self.view addSubview:imgView];
+//    [self.view addSubview:imgView];
     imgView.userInteractionEnabled=YES;
     UIPinchGestureRecognizer * pin=[[UIPinchGestureRecognizer alloc]initWithTarget:self action:@selector(pin:)];
-//    imgView.layer.anchorPoint=CGPointMake(0, 0);
-//    imgView.layer.position=CGPointMake(0, 0);
+
+    imgView.layer.anchorPoint=CGPointMake(0.5, .5);
+    imgView.layer.position=CGPointMake(100, 200);
     [imgView addGestureRecognizer:pin];
     
     // Do any additional setup after loading the view.
 }
 -(void)pin:(UIPinchGestureRecognizer *)gesture{
-    gesture.view.transform=CGAffineTransformScale(gesture.view.transform, gesture.scale, gesture.scale);
-    
-    
-    CGPoint point0 = [gesture locationOfTouch:0 inView:gesture.view];
-    NSLog(@"%f %f",point0.x,point0.y);
-    
-    CGPoint point1 = [gesture locationOfTouch:1 inView:gesture.view];
-    
-    CGPoint center=CGPointMake((point1.x-point0.x)/2,(point1.y-point0.y)/2);
-//    center.x=gesture.view.left+center.x;
-//    center.y=gesture.view.top+center.y;
 
+    gesture.view.transform=CGAffineTransformScale(gesture.view.transform, gesture.scale, gesture.scale);
+    CGPoint point0 = [gesture locationOfTouch:0 inView:gesture.view];
+    NSLog(@"1   point   %f,%f\n",point0.x,point0.y);
+    CGPoint point1 = [gesture locationOfTouch:1 inView:gesture.view];
+    NSLog(@"2   point  %f,%f\n",point1.x,point1.y);
+    CGPoint centerPoint=  CGPointMake((point0.x +point1.x)/2/gesture.view.width, (point0.y+point1.y)/2/gesture.view.height);
     
+    gesture.view.layer.position=CGPointMake((point0.x +point1.x)/2+gesture.view.left, (point0.y+point1.y)/2+gesture.view.top);
+    NSLog(@"%f %f\n",centerPoint.x,centerPoint.y);
     
-//    center.x=center.x+gesture.view.left;
-//    center.y=center.y+gesture.view.top;
-//        NSLog(@"cente %f %f",center.x,center.y);
-//    gesture.view.center=center;
-    
+    gesture.view.layer.anchorPoint=centerPoint;
     gesture.scale=1;
     gesture.scale=1;
     

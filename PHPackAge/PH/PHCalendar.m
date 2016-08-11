@@ -32,6 +32,7 @@
     [fo setDateFormat:@"yyyy-MM-dd"];
     NSString * nowDateString=[fo stringFromDate:[NSDate date]];
     NSArray * nowDateArr=[nowDateString componentsSeparatedByString:@"-"];
+    
     _currentYear=[[NSString stringWithFormat:@"%@",nowDateArr[0]] integerValue];
     _currentMonth=[[NSString stringWithFormat:@"%@",nowDateArr[1]] integerValue];
 }
@@ -105,14 +106,6 @@
     [self reshView];
     
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
