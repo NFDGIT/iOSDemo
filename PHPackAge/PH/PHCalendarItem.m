@@ -19,49 +19,55 @@
     return self;
 }
 -(void)newView{
-    _viewImg=[UIImageView new];
-    [self addSubview:_viewImg];
     
-    _labelTitle=[UILabel new];
-    _labelTitle.textAlignment=NSTextAlignmentCenter;
-    _labelTitle.font=[UIFont systemFontOfSize:17];
-    _labelTitle.textColor=[UIColor blackColor];
+    _labelTitle=[UIButton new];
+    _labelTitle.userInteractionEnabled=NO;
+    _labelTitle.titleLabel.textAlignment=NSTextAlignmentCenter;
+    _labelTitle.titleLabel.font=[UIFont systemFontOfSize:17];
+    _labelTitle.backgroundColor=[UIColor lightGrayColor];
+    [_labelTitle setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self addSubview:_labelTitle];
     
-    _lunarCalendar=[UILabel new];
-    _lunarCalendar.textAlignment=NSTextAlignmentCenter;
-    _lunarCalendar.font=[UIFont systemFontOfSize:12];
-    _lunarCalendar.textColor=[UIColor blackColor];
-    [self addSubview:_lunarCalendar];
 }
+
+-(void)setSelected:(BOOL)selected{
+    [super setSelected:selected];
+    
+    if (selected) {
+        _labelTitle.backgroundColor=[UIColor redColor];
+    }else{
+        _labelTitle.backgroundColor=[UIColor lightGrayColor];
+    }
+}
+
 -(void)layoutSubviews{
     [super layoutSubviews];
-    _viewImg.frame=CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     
-    _labelTitle.frame=CGRectMake(0, 10, self.frame.size.width, self.frame.size.height/2-10);
-    _labelTitle.text=[NSString stringWithFormat:@"%ld",_day];
-    
-    _lunarCalendar.frame=CGRectMake(0, _labelTitle.bottom, self.width, _labelTitle.height);
-    _lunarCalendar.text=_lunarDay;
-    
+    _labelTitle.frame=CGRectMake(5*self.scale, 5*self.scale, self.frame.size.width-10*self.scale, self.frame.size.height-10*self.scale);
+    _labelTitle.centerX=self.width/2;
+    _labelTitle.centerY=self.height/2;
+    _labelTitle.layer.cornerRadius=_labelTitle.width/2;
+    _labelTitle.layer.masksToBounds=YES;
+//    _labelTitle.titleLabel.text=[NSString stringWithFormat:@"%d",_day];
+    [_labelTitle setTitle:[NSString stringWithFormat:@"%d",_day] forState:UIControlStateNormal];
     switch (_itemType) {
         case PHCalendarItemType1:
-            self.backgroundColor=[UIColor purpleColor];
+//            self.backgroundColor=[UIColor purpleColor];
             break;
         case PHCalendarItemType2:
-            self.backgroundColor=[UIColor blueColor];
+//            self.backgroundColor=[UIColor blueColor];
             break;
             
         default:
             break;
     }
-    self.viewImg.backgroundColor=[UIColor lightGrayColor];
+//    self.viewImg.backgroundColor=[UIColor lightGrayColor];
   
     if (_isToday) {
-        self.viewImg.backgroundColor=[UIColor blueColor];
+        self.labelTitle.backgroundColor=[UIColor blueColor];
     }
     if (self.selected) {
-        self.viewImg.backgroundColor=[UIColor redColor];
+        self.labelTitle.backgroundColor=[UIColor redColor];
     }
 }
 /*

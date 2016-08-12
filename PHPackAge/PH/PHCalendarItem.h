@@ -14,8 +14,8 @@ typedef enum : NSInteger{
 @interface PHCalendarItem : UIButton
 
 @property (nonatomic,strong)UIImageView * viewImg;
-@property (nonatomic,strong)UILabel     * labelTitle;
-@property (nonatomic,strong)UILabel     * lunarCalendar;
+@property (nonatomic,strong)UIButton     * labelTitle;
+//@property (nonatomic,strong)UILabel     * lunarCalendar;
 
 
 @property (nonatomic,assign)BOOL isToday;

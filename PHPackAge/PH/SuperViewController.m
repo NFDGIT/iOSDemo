@@ -1,25 +1,23 @@
 //
-//  ViewController.m
-//  PHJD
+//  SuperViewController.m
+//  PHPackAge
 //
-//  Created by wdx on 16/7/6.
+//  Created by wdx on 16/8/11.
 //  Copyright © 2016年 wdx. All rights reserved.
 //
 
-#import "PHViewController.h"
+#import "SuperViewController.h"
 
-
-@interface PHViewController ()
+@interface SuperViewController ()
 
 @end
 
-@implementation PHViewController
+@implementation SuperViewController
 
 - (void)viewDidLoad {
-    
-    
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor whiteColor];
+    // Do any additional setup after loading the view.
 }
 
 #pragma  mark   --   属性文本
@@ -73,7 +71,7 @@
     noticeLabel.layer.cornerRadius=5*self.view.scale;
     noticeLabel.layer.masksToBounds=YES;
     noticeLabel.textAlignment=NSTextAlignmentCenter;
-//    noticeLabel.alpha=0.8;
+    //    noticeLabel.alpha=0.8;
     noticeLabel.backgroundColor=[UIColor grayColor];
     
     noticeLabel.center=self.view.center;
@@ -87,10 +85,19 @@
 -(void)showAlertWithTitle:(NSString *)title content:(NSString *)content{
     UIAlertController * alert=[UIAlertController alertControllerWithTitle:title message:content preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction * action1=[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-       
+        
     }];
     [alert addAction:action1];
     [self presentViewController:alert animated:YES completion:nil];
 }
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

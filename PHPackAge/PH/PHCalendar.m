@@ -13,6 +13,7 @@
 @property (nonatomic,strong)UILabel * yearAndMonth;
 @property (nonatomic,assign)NSInteger currentYear;
 @property (nonatomic,assign)NSInteger currentMonth;
+@property (nonatomic,assign)NSInteger currentMonthConstant;
 
 @property (nonatomic,strong)UIPageViewController * mainPage;
 @end
@@ -33,8 +34,10 @@
     NSString * nowDateString=[fo stringFromDate:[NSDate date]];
     NSArray * nowDateArr=[nowDateString componentsSeparatedByString:@"-"];
     
+    
     _currentYear=[[NSString stringWithFormat:@"%@",nowDateArr[0]] integerValue];
     _currentMonth=[[NSString stringWithFormat:@"%@",nowDateArr[1]] integerValue];
+    _currentMonthConstant=_currentMonth;
 }
 -(void)newView{
     
@@ -79,11 +82,14 @@
     NSInteger currentYear= ((PHCalendarContentVC *)(pageViewController.viewControllers.firstObject)).currentYear;
     NSInteger currentMonth= ((PHCalendarContentVC *)(pageViewController.viewControllers.firstObject)).currentMonth;
     currentMonth++;
+    if (currentMonth>_currentMonthConstant+1) {
+        return nil;
+    }
+    
     if (currentMonth>12) {
         currentMonth=1;
         currentYear+=1;
     }
-    
     PHCalendarContentVC * calendar=[PHCalendarContentVC instantMonthPageWithCurrentYear:currentYear andMonth:currentMonth];
     return calendar;
 }
@@ -91,6 +97,11 @@
     NSInteger currentYear= ((PHCalendarContentVC *)(pageViewController.viewControllers.firstObject)).currentYear;
     NSInteger currentMonth= ((PHCalendarContentVC *)(pageViewController.viewControllers.firstObject)).currentMonth;
     currentMonth--;
+    if (currentMonth<_currentMonthConstant-1) {
+        return nil;
+    }
+    
+    
     if(currentMonth<1){
         currentMonth=12;
         currentYear-=1;

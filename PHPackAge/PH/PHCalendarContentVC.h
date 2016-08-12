@@ -6,9 +6,9 @@
 //  Copyright © 2016年 wdx. All rights reserved.
 //
 
-#import "PHViewController.h"
-
-@interface PHCalendarContentVC : PHViewController
+//#import "PHViewController.h"
+#import "SuperViewController.h"
+@interface PHCalendarContentVC : SuperViewController
 @property (nonatomic,assign)NSInteger currentYear;
 @property (nonatomic,assign)NSInteger currentMonth;
 

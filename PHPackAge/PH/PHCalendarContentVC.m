@@ -58,14 +58,14 @@
         item.layer.masksToBounds=YES;
        
         item.day=(NSInteger)i-_dayOfWeekOfFirstDay+2;
-        [item setBackgroundImage:[UIImage ImageForColor:[UIColor lightGrayColor]] forState:UIControlStateNormal];
-        [item setBackgroundImage:[UIImage ImageForColor:[UIColor redColor]] forState:UIControlStateSelected];
+//        [item setBackgroundImage:[UIImage ImageForColor:[UIColor lightGrayColor]] forState:UIControlStateNormal];
+//        [item setBackgroundImage:[UIImage ImageForColor:[UIColor redColor]] forState:UIControlStateSelected];
         [item addTarget:self action:@selector(itemBtn:) forControlEvents:UIControlEventTouchUpInside];
         setY=item.bottom;
         item.selected=[self judgeIsSelected:item];
         
-        NSString * dateString=[NSString stringWithFormat:@"%ld-%ld-%ld",(long)_currentYear,_currentMonth,i-_dayOfWeekOfFirstDay+2];
-        item.lunarDay=[self chineseCalendarOfDate:[self getDayWithString:dateString]];
+        NSString * dateString=[NSString stringWithFormat:@"%d-%d-%d",_currentYear,_currentMonth,i-_dayOfWeekOfFirstDay+2];
+//        item.lunarDay=[self chineseCalendarOfDate:[self getDayWithString:dateString]];
    
         
         if ([[self getDayWithString:dateString] isEqualToDate:[self nowDate]]) {
@@ -74,9 +74,6 @@
         
          [_contentScroll addSubview:item];
     }
-    
-    
-    
 }
 -(BOOL)judgeIsSelected:(PHCalendarItem *)sender{
    NSMutableArray * dayArray=[_userDefaults valueForKey:selectedDaySet];
@@ -99,9 +96,9 @@
         dayArray=[NSMutableArray array];
     }
 
-    NSString * dayString=[NSString stringWithFormat:@"%ld",sender.day];
-    NSString * monthString=[NSString stringWithFormat:@"%ld",_currentMonth];
-    NSString * yearString=[NSString stringWithFormat:@"%ld",_currentYear];
+    NSString * dayString=[NSString stringWithFormat:@"%d",sender.day];
+    NSString * monthString=[NSString stringWithFormat:@"%d",_currentMonth];
+    NSString * yearString=[NSString stringWithFormat:@"%d",_currentYear];
     NSMutableDictionary * dayDic=[NSMutableDictionary dictionaryWithDictionary:@{@"day":dayString,@"month":monthString,@"year":yearString}];
     
     if (sender.selected) {
@@ -118,7 +115,7 @@
 // 获取date当前月的第一天是星期几
 - (NSInteger)weekdayOfFirstDayInDate {
     
-    NSString * dateString=[NSString stringWithFormat:@"%ld-%ld-%d",(long)_currentYear,_currentMonth,01];
+    NSString * dateString=[NSString stringWithFormat:@"%d-%d-%d",_currentYear,_currentMonth,01];
 
     NSCalendar *calendar = [NSCalendar currentCalendar];
     [calendar setFirstWeekday:1];
@@ -131,7 +128,7 @@
 }
 // 获取date当前月的总天数
 - (NSInteger)totalDaysInMonthOfDate:(NSDate *)date {
-    NSString * dateString=[NSString stringWithFormat:@"%ld-%ld-%d",(long)_currentYear,_currentMonth,01];
+    NSString * dateString=[NSString stringWithFormat:@"%d-%d-%d",_currentYear,_currentMonth,01];
     NSRange range = [[NSCalendar currentCalendar] rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:[self getDayWithString:dateString]];
     return range.length;
 }
@@ -156,8 +153,6 @@
 
 
 - (NSString *)chineseCalendarOfDate:(NSDate *)date {
-    
-    
     
     NSCalendar *chineseCalendar = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierChinese];
     

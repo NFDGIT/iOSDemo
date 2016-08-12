@@ -6,9 +6,9 @@
 //  Copyright © 2016年 wdx. All rights reserved.
 //
 
-#import "PHViewController.h"
+#import "SuperViewController.h"
 
-@interface ViewController : PHViewController
+@interface ViewController : SuperViewController
 
 
 @end

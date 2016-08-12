@@ -6,8 +6,8 @@
 //  Copyright © 2016年 wdx. All rights reserved.
 //
 
-#import "PHViewController.h"
-
-@interface PHCalendar : PHViewController
+//#import "PHViewController.h"
+#import "SuperViewController.h"
+@interface PHCalendar : SuperViewController
 
 @end

@@ -18,9 +18,9 @@
 		2A6FC3BB1D2DF1430006CBE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A6FC3BA1D2DF1430006CBE2 /* Assets.xcassets */; };
 		2A6FC3BE1D2DF1430006CBE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6FC3BC1D2DF1430006CBE2 /* LaunchScreen.storyboard */; };
 		2A6FC3CD1D2DF16E0006CBE2 /* PHCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FC3C71D2DF16E0006CBE2 /* PHCellView.m */; };
-		2A6FC3CE1D2DF16E0006CBE2 /* PHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FC3CA1D2DF16E0006CBE2 /* PHViewController.m */; };
 		2A6FC3CF1D2DF16E0006CBE2 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FC3CC1D2DF16E0006CBE2 /* UIViewAdditions.m */; };
 		2A6FC3D51D2DF1950006CBE2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FC3D41D2DF1950006CBE2 /* ViewController.m */; };
+		2AB68FAF1D5C3CE100C98438 /* SuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB68FAE1D5C3CE100C98438 /* SuperViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,12 +44,12 @@
 		2A6FC3C61D2DF16E0006CBE2 /* PHCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHCellView.h; sourceTree = "<group>"; };
 		2A6FC3C71D2DF16E0006CBE2 /* PHCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHCellView.m; sourceTree = "<group>"; };
 		2A6FC3C81D2DF16E0006CBE2 /* PHDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHDefine.h; sourceTree = "<group>"; };
-		2A6FC3C91D2DF16E0006CBE2 /* PHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHViewController.h; sourceTree = "<group>"; };
-		2A6FC3CA1D2DF16E0006CBE2 /* PHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHViewController.m; sourceTree = "<group>"; };
 		2A6FC3CB1D2DF16E0006CBE2 /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
 		2A6FC3CC1D2DF16E0006CBE2 /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
 		2A6FC3D31D2DF1950006CBE2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2A6FC3D41D2DF1950006CBE2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2AB68FAD1D5C3CE100C98438 /* SuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperViewController.h; sourceTree = "<group>"; };
+		2AB68FAE1D5C3CE100C98438 /* SuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +127,8 @@
 				2A6FC3C61D2DF16E0006CBE2 /* PHCellView.h */,
 				2A6FC3C71D2DF16E0006CBE2 /* PHCellView.m */,
 				2A6FC3C81D2DF16E0006CBE2 /* PHDefine.h */,
-				2A6FC3C91D2DF16E0006CBE2 /* PHViewController.h */,
-				2A6FC3CA1D2DF16E0006CBE2 /* PHViewController.m */,
+				2AB68FAD1D5C3CE100C98438 /* SuperViewController.h */,
+				2AB68FAE1D5C3CE100C98438 /* SuperViewController.m */,
 				2A6FC3CB1D2DF16E0006CBE2 /* UIViewAdditions.h */,
 				2A6FC3CC1D2DF16E0006CBE2 /* UIViewAdditions.m */,
 			);
@@ -206,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AB68FAF1D5C3CE100C98438 /* SuperViewController.m in Sources */,
 				2A40CB671D5AB2BB00BF7A80 /* UIImage+Helper.m in Sources */,
 				2A6FC3D51D2DF1950006CBE2 /* ViewController.m in Sources */,
 				2A6886901D59AFAF00DD239C /* PHCalendar.m in Sources */,
@@ -215,7 +216,6 @@
 				2A6FC3B01D2DF1430006CBE2 /* main.m in Sources */,
 				2A6886991D59B09C00DD239C /* PHCalendarContentVC.m in Sources */,
 				2A40CB6A1D5AC19100BF7A80 /* PHCalendarItem.m in Sources */,
-				2A6FC3CE1D2DF16E0006CBE2 /* PHViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
