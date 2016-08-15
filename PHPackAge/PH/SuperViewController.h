@@ -16,15 +16,13 @@
  */
 -(UILabel *)getColorLabel:(UILabel *)label stringAndColor:(NSDictionary *)dict;
 /*
- *获得下划线
+ *获得删除线
  */
 -(UILabel *)getDeleteLineWithLabel:(UILabel *)label;
 /*
  *
  */
 -(UILabel *)changeLabel:(UILabel *)label ParagraphSpace:(CGFloat )space;
-
-
 
 /*
  *获得 文本view 的大小
