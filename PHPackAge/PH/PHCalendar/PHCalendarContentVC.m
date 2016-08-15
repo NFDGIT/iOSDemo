@@ -8,8 +8,8 @@
 
 #import "PHCalendarContentVC.h"
 #import "PHCalendarItem.h"
+#define selectedDaySet @"selectedDaySet"
 #define ChineseMonths @[@"正月", @"二月", @"三月", @"四月", @"五月", @"六月", @"七月", @"八月",@"九月", @"十月", @"冬月", @"腊月"]
-
 #define ChineseFestival @[@"除夕",@"春节",@"中秋",@"五一",@"国庆",@"儿童",@"圣诞",@"七夕",@"端午"]
 
 #define ChineseDays @[@"初一", @"初二", @"初三", @"初四", @"初五", @"初六", @"初七", @"初八", @"初九", @"初十",@"十一", @"十二", @"十三", @"十四", @"十五", @"十六", @"十七", @"十八", @"十九", @"二十", @"廿一", @"廿二", @"廿三", @"廿四", @"廿五", @"廿六", @"廿七", @"廿八", @"廿九", @"三十"]
@@ -43,8 +43,7 @@
 
 }
 -(void)newView{
-    _contentScroll=[[UIScrollView alloc]initWithFrame:self.view.frame];
-    [self.view addSubview:_contentScroll];
+ 
 
     CGFloat setY=0;
     CGFloat itemW=(self.view.width-20*self.view.scale)/7;
@@ -58,8 +57,7 @@
         item.layer.masksToBounds=YES;
        
         item.day=(NSInteger)i-_dayOfWeekOfFirstDay+2;
-//        [item setBackgroundImage:[UIImage ImageForColor:[UIColor lightGrayColor]] forState:UIControlStateNormal];
-//        [item setBackgroundImage:[UIImage ImageForColor:[UIColor redColor]] forState:UIControlStateSelected];
+
         [item addTarget:self action:@selector(itemBtn:) forControlEvents:UIControlEventTouchUpInside];
         setY=item.bottom;
         item.selected=[self judgeIsSelected:item];
@@ -72,7 +70,7 @@
             item.isToday=YES;
         }
         
-         [_contentScroll addSubview:item];
+         [self.view addSubview:item];
     }
 }
 -(BOOL)judgeIsSelected:(PHCalendarItem *)sender{

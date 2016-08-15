@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PHDefine.h"
-#import "UIImage+Helper.h"
+
 @interface SuperViewController : UIViewController
 #pragma  mark   --   属性文本
 /*

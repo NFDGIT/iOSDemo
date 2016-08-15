@@ -23,7 +23,7 @@
     _labelTitle=[UIButton new];
     _labelTitle.userInteractionEnabled=NO;
     _labelTitle.titleLabel.textAlignment=NSTextAlignmentCenter;
-    _labelTitle.titleLabel.font=[UIFont systemFontOfSize:17];
+    _labelTitle.titleLabel.font=DefaultFont(self.scale);
     _labelTitle.backgroundColor=[UIColor lightGrayColor];
     [_labelTitle setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self addSubview:_labelTitle];

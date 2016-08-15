@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2A40CB671D5AB2BB00BF7A80 /* UIImage+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A40CB661D5AB2BB00BF7A80 /* UIImage+Helper.m */; };
-		2A40CB6A1D5AC19100BF7A80 /* PHCalendarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A40CB691D5AC19100BF7A80 /* PHCalendarItem.m */; };
 		2A40CB6C1D5AD74800BF7A80 /* 22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A40CB6B1D5AD74800BF7A80 /* 22.jpg */; };
-		2A6886901D59AFAF00DD239C /* PHCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A68868F1D59AFAF00DD239C /* PHCalendar.m */; };
-		2A6886991D59B09C00DD239C /* PHCalendarContentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6886981D59B09C00DD239C /* PHCalendarContentVC.m */; };
+		2A54E4461D5D757E008CA6D2 /* PHCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A54E4411D5D757E008CA6D2 /* PHCalendar.m */; };
+		2A54E4471D5D757E008CA6D2 /* PHCalendarContentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A54E4431D5D757E008CA6D2 /* PHCalendarContentVC.m */; };
+		2A54E4481D5D757E008CA6D2 /* PHCalendarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A54E4451D5D757E008CA6D2 /* PHCalendarItem.m */; };
+		2A54E44C1D5D7828008CA6D2 /* PHPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A54E44B1D5D7828008CA6D2 /* PHPrinter.m */; };
 		2A6FC3B01D2DF1430006CBE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FC3AF1D2DF1430006CBE2 /* main.m */; };
 		2A6FC3B31D2DF1430006CBE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FC3B21D2DF1430006CBE2 /* AppDelegate.m */; };
 		2A6FC3B91D2DF1430006CBE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6FC3B71D2DF1430006CBE2 /* Main.storyboard */; };
@@ -26,13 +27,15 @@
 /* Begin PBXFileReference section */
 		2A40CB651D5AB2BB00BF7A80 /* UIImage+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Helper.h"; sourceTree = "<group>"; };
 		2A40CB661D5AB2BB00BF7A80 /* UIImage+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Helper.m"; sourceTree = "<group>"; };
-		2A40CB681D5AC19100BF7A80 /* PHCalendarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHCalendarItem.h; sourceTree = "<group>"; };
-		2A40CB691D5AC19100BF7A80 /* PHCalendarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHCalendarItem.m; sourceTree = "<group>"; };
 		2A40CB6B1D5AD74800BF7A80 /* 22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 22.jpg; sourceTree = "<group>"; };
-		2A68868E1D59AFAF00DD239C /* PHCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHCalendar.h; sourceTree = "<group>"; };
-		2A68868F1D59AFAF00DD239C /* PHCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHCalendar.m; sourceTree = "<group>"; };
-		2A6886971D59B09C00DD239C /* PHCalendarContentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHCalendarContentVC.h; sourceTree = "<group>"; };
-		2A6886981D59B09C00DD239C /* PHCalendarContentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHCalendarContentVC.m; sourceTree = "<group>"; };
+		2A54E4401D5D757E008CA6D2 /* PHCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHCalendar.h; path = PHCalendar/PHCalendar.h; sourceTree = "<group>"; };
+		2A54E4411D5D757E008CA6D2 /* PHCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHCalendar.m; path = PHCalendar/PHCalendar.m; sourceTree = "<group>"; };
+		2A54E4421D5D757E008CA6D2 /* PHCalendarContentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHCalendarContentVC.h; path = PHCalendar/PHCalendarContentVC.h; sourceTree = "<group>"; };
+		2A54E4431D5D757E008CA6D2 /* PHCalendarContentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHCalendarContentVC.m; path = PHCalendar/PHCalendarContentVC.m; sourceTree = "<group>"; };
+		2A54E4441D5D757E008CA6D2 /* PHCalendarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHCalendarItem.h; path = PHCalendar/PHCalendarItem.h; sourceTree = "<group>"; };
+		2A54E4451D5D757E008CA6D2 /* PHCalendarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHCalendarItem.m; path = PHCalendar/PHCalendarItem.m; sourceTree = "<group>"; };
+		2A54E44A1D5D7828008CA6D2 /* PHPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHPrinter.h; path = Printer/PHPrinter.h; sourceTree = "<group>"; };
+		2A54E44B1D5D7828008CA6D2 /* PHPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHPrinter.m; path = Printer/PHPrinter.m; sourceTree = "<group>"; };
 		2A6FC3AB1D2DF1430006CBE2 /* PHPackAge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHPackAge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6FC3AF1D2DF1430006CBE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A6FC3B11D2DF1430006CBE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,15 +66,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A54E4491D5D75D4008CA6D2 /* 打印机 */ = {
+			isa = PBXGroup;
+			children = (
+				2A54E44A1D5D7828008CA6D2 /* PHPrinter.h */,
+				2A54E44B1D5D7828008CA6D2 /* PHPrinter.m */,
+			);
+			name = "打印机";
+			sourceTree = "<group>";
+		};
 		2A68868D1D59AF4300DD239C /* 日历 */ = {
 			isa = PBXGroup;
 			children = (
-				2A68868E1D59AFAF00DD239C /* PHCalendar.h */,
-				2A68868F1D59AFAF00DD239C /* PHCalendar.m */,
-				2A6886971D59B09C00DD239C /* PHCalendarContentVC.h */,
-				2A6886981D59B09C00DD239C /* PHCalendarContentVC.m */,
-				2A40CB681D5AC19100BF7A80 /* PHCalendarItem.h */,
-				2A40CB691D5AC19100BF7A80 /* PHCalendarItem.m */,
+				2A54E4401D5D757E008CA6D2 /* PHCalendar.h */,
+				2A54E4411D5D757E008CA6D2 /* PHCalendar.m */,
+				2A54E4421D5D757E008CA6D2 /* PHCalendarContentVC.h */,
+				2A54E4431D5D757E008CA6D2 /* PHCalendarContentVC.m */,
+				2A54E4441D5D757E008CA6D2 /* PHCalendarItem.h */,
+				2A54E4451D5D757E008CA6D2 /* PHCalendarItem.m */,
 			);
 			name = "日历";
 			sourceTree = "<group>";
@@ -121,9 +133,10 @@
 		2A6FC3C51D2DF16E0006CBE2 /* PH */ = {
 			isa = PBXGroup;
 			children = (
+				2A54E4491D5D75D4008CA6D2 /* 打印机 */,
+				2A68868D1D59AF4300DD239C /* 日历 */,
 				2A40CB651D5AB2BB00BF7A80 /* UIImage+Helper.h */,
 				2A40CB661D5AB2BB00BF7A80 /* UIImage+Helper.m */,
-				2A68868D1D59AF4300DD239C /* 日历 */,
 				2A6FC3C61D2DF16E0006CBE2 /* PHCellView.h */,
 				2A6FC3C71D2DF16E0006CBE2 /* PHCellView.m */,
 				2A6FC3C81D2DF16E0006CBE2 /* PHDefine.h */,
@@ -207,15 +220,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AB68FAF1D5C3CE100C98438 /* SuperViewController.m in Sources */,
+				2A54E4461D5D757E008CA6D2 /* PHCalendar.m in Sources */,
 				2A40CB671D5AB2BB00BF7A80 /* UIImage+Helper.m in Sources */,
 				2A6FC3D51D2DF1950006CBE2 /* ViewController.m in Sources */,
-				2A6886901D59AFAF00DD239C /* PHCalendar.m in Sources */,
 				2A6FC3B31D2DF1430006CBE2 /* AppDelegate.m in Sources */,
 				2A6FC3CF1D2DF16E0006CBE2 /* UIViewAdditions.m in Sources */,
 				2A6FC3CD1D2DF16E0006CBE2 /* PHCellView.m in Sources */,
 				2A6FC3B01D2DF1430006CBE2 /* main.m in Sources */,
-				2A6886991D59B09C00DD239C /* PHCalendarContentVC.m in Sources */,
-				2A40CB6A1D5AC19100BF7A80 /* PHCalendarItem.m in Sources */,
+				2A54E4481D5D757E008CA6D2 /* PHCalendarItem.m in Sources */,
+				2A54E44C1D5D7828008CA6D2 /* PHPrinter.m in Sources */,
+				2A54E4471D5D757E008CA6D2 /* PHCalendarContentVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

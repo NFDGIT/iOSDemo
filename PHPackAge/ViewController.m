@@ -19,7 +19,7 @@
     [super viewDidLoad];
     
     
-    
+
     UIButton * btn=[[UIButton alloc]initWithFrame:CGRectMake(100, 100, 50, 30)];
     btn.backgroundColor=[UIColor redColor];
     [self.view addSubview:btn];
