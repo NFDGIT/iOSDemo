@@ -36,4 +36,5 @@
  *压缩图片 压缩后最多只有100k
  */
 -(UIImage *) scaleImage: (UIImage *)image;
+
 @end

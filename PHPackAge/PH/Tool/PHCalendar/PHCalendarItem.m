@@ -23,7 +23,7 @@
     _labelTitle=[UIButton new];
     _labelTitle.userInteractionEnabled=NO;
     _labelTitle.titleLabel.textAlignment=NSTextAlignmentCenter;
-    _labelTitle.titleLabel.font=DefaultFont(self.scale);
+    _labelTitle.titleLabel.font=fontDefault(self.scale);
     _labelTitle.backgroundColor=[UIColor lightGrayColor];
     [_labelTitle setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self addSubview:_labelTitle];
@@ -49,7 +49,7 @@
     _labelTitle.layer.cornerRadius=_labelTitle.width/2;
     _labelTitle.layer.masksToBounds=YES;
 //    _labelTitle.titleLabel.text=[NSString stringWithFormat:@"%d",_day];
-    [_labelTitle setTitle:[NSString stringWithFormat:@"%d",_day] forState:UIControlStateNormal];
+    [_labelTitle setTitle:[NSString stringWithFormat:@"%ld",(long)_day] forState:UIControlStateNormal];
     switch (_itemType) {
         case PHCalendarItemType1:
 //            self.backgroundColor=[UIColor purpleColor];

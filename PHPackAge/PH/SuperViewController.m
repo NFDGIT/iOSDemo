@@ -64,7 +64,7 @@
     UILabel * noticeLabel=[[UILabel alloc]init];
     noticeLabel.text=prompt;
     noticeLabel.font=[UIFont systemFontOfSize:13*self.view.scale];
-    noticeLabel.size=[self Text:prompt Size:CGSizeMake(sWidth/2, 2000) Font:13*self.view.scale];
+    noticeLabel.size=[self Text:prompt Size:CGSizeMake(Vwidth/2, 2000) Font:13*self.view.scale];
     noticeLabel.height=noticeLabel.height+20*self.view.scale;
     noticeLabel.width=noticeLabel.width+20*self.view.scale;
     noticeLabel.numberOfLines=0;

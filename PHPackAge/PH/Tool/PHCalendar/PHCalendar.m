@@ -41,12 +41,12 @@
 }
 -(void)newView{
     
-    _yearAndMonth=[[UILabel alloc]initWithFrame:CGRectMake(10*self.view.scale, 100, sWidth-20*self.view.scale, 20*self.view.scale)];
-    _yearAndMonth.font=Big16Font(self.view.scale);
+    _yearAndMonth=[[UILabel alloc]initWithFrame:CGRectMake(10*self.view.scale, 100, Vwidth-20*self.view.scale, 20*self.view.scale)];
+    _yearAndMonth.font=fontBig16(self.view.scale);
     _yearAndMonth.textAlignment=NSTextAlignmentCenter;
     [self.view addSubview:_yearAndMonth];
     
-    UIView * topView=[[UIView alloc]initWithFrame:CGRectMake(10*self.view.scale, _yearAndMonth.bottom, sWidth-20*self.view.scale, 20*self.view.scale)];
+    UIView * topView=[[UIView alloc]initWithFrame:CGRectMake(10*self.view.scale, _yearAndMonth.bottom, Vwidth-20*self.view.scale, 20*self.view.scale)];
     [self.view addSubview:topView];
     
     NSArray * weekTitles=@[@"日",@"一",@"二",@"三",@"四",@"五",@"六"];
@@ -56,7 +56,7 @@
         UILabel * week=[[UILabel alloc]initWithFrame:CGRectMake(i * weekW, 0, weekW, topView.height)];
         week.textAlignment=NSTextAlignmentCenter;
         week.text=weekTitles[i];
-        week.font=DefaultFont(self.view.scale);
+        week.font=fontDefault(self.view.scale);
         [topView addSubview:week];
     }
     

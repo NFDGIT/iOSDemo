@@ -62,7 +62,7 @@
         setY=item.bottom;
         item.selected=[self judgeIsSelected:item];
         
-        NSString * dateString=[NSString stringWithFormat:@"%d-%d-%d",_currentYear,_currentMonth,i-_dayOfWeekOfFirstDay+2];
+        NSString * dateString=[NSString stringWithFormat:@"%ld-%ld-%ld",(long)_currentYear,(long)_currentMonth,i-_dayOfWeekOfFirstDay+2];
 //        item.lunarDay=[self chineseCalendarOfDate:[self getDayWithString:dateString]];
    
         
@@ -94,9 +94,9 @@
         dayArray=[NSMutableArray array];
     }
 
-    NSString * dayString=[NSString stringWithFormat:@"%d",sender.day];
-    NSString * monthString=[NSString stringWithFormat:@"%d",_currentMonth];
-    NSString * yearString=[NSString stringWithFormat:@"%d",_currentYear];
+    NSString * dayString=[NSString stringWithFormat:@"%ld",(long)sender.day];
+    NSString * monthString=[NSString stringWithFormat:@"%ld",(long)_currentMonth];
+    NSString * yearString=[NSString stringWithFormat:@"%ld",(long)_currentYear];
     NSMutableDictionary * dayDic=[NSMutableDictionary dictionaryWithDictionary:@{@"day":dayString,@"month":monthString,@"year":yearString}];
     
     if (sender.selected) {
@@ -113,7 +113,7 @@
 // 获取date当前月的第一天是星期几
 - (NSInteger)weekdayOfFirstDayInDate {
     
-    NSString * dateString=[NSString stringWithFormat:@"%d-%d-%d",_currentYear,_currentMonth,01];
+    NSString * dateString=[NSString stringWithFormat:@"%ld-%ld-%d",(long)_currentYear,(long)_currentMonth,01];
 
     NSCalendar *calendar = [NSCalendar currentCalendar];
     [calendar setFirstWeekday:1];
@@ -126,7 +126,7 @@
 }
 // 获取date当前月的总天数
 - (NSInteger)totalDaysInMonthOfDate:(NSDate *)date {
-    NSString * dateString=[NSString stringWithFormat:@"%d-%d-%d",_currentYear,_currentMonth,01];
+    NSString * dateString=[NSString stringWithFormat:@"%ld-%ld-%d",(long)_currentYear,(long)_currentMonth,01];
     NSRange range = [[NSCalendar currentCalendar] rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:[self getDayWithString:dateString]];
     return range.length;
 }

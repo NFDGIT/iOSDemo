@@ -10,6 +10,8 @@
 #define PHDefine_h
 #import "UIImage+Helper.h"
 #import "UIViewAdditions.h"
+#import "Masonry.h"
+
 
 #pragma mark -- Color
 /*
@@ -55,8 +57,8 @@
 
 
 #pragma mark -- 屏幕尺寸
-#define sWidth     [UIScreen mainScreen].bounds.size.width
-#define sHeight    [UIScreen mainScreen].bounds.size.height
+#define Vwidth     [UIScreen mainScreen].bounds.size.width
+#define Vheight    [UIScreen mainScreen].bounds.size.height
 
 
 
