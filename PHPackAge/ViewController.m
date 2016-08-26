@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "ScreenShotView.h"
 
+#import "ImageCutTool.h"
 
 #import "CustomWebView.h"
 @interface ViewController ()
@@ -28,6 +28,13 @@
 
     [self.view addSubview:_imgsource];
     
+    UIImageView * imgView=[[UIImageView alloc]initWithFrame:CGRectMake(200, 400, 200, 200)];
+    imgView.center=self.view.center;
+    imgView.tag=101;
+    imgView.contentMode=UIViewContentModeScaleAspectFill;
+    [self.view addSubview:imgView];
+    
+    
     UIButton * btn=[[UIButton alloc]initWithFrame:CGRectMake(100, 100, 50, 30)];
     btn.backgroundColor=[UIColor redColor];
     [self.view addSubview:btn];
@@ -42,16 +49,12 @@
 
 -(void)btnClick:(UIButton*)sender{
  
-    
-    
-    ScreenShotView * screenShot=[ScreenShotView new];
-    screenShot.marqueeType=MarqueeTypeRect;
-    screenShot.marqueeW=300;
-    screenShot.originImage=[UIImage imageNamed:@"111.jpg"];
-    
-    
-    [self.view addSubview:screenShot];
-    screenShot.block=^(UIImage * image){
+    ImageCutTool * cut=[ImageCutTool new];
+    cut.marqueeType=MarqueeTypeRound;
+    cut.marqueeW=200;
+    cut.originImage=[UIImage imageNamed:@"111.jpg"];
+    [self presentViewController:cut animated:NO completion:nil];
+    cut.block=^(UIImage * image){
         
         NSData *data = UIImagePNGRepresentation(image);
         NSString *path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"newClip.png"];
@@ -60,12 +63,16 @@
         path=@"/Users/wdx/Desktop/screenShot.jpg";
         [data writeToFile:path atomically:YES];
         
-        UIImageView * imgView=[[UIImageView alloc]initWithFrame:CGRectMake(200, 400, 200, 200)];
+        UIImageView * imgView=[self.view viewWithTag:101];
         imgView.image=image;
-        imgView.contentMode=UIViewContentModeScaleAspectFill;
-        [self.view addSubview:imgView];
+        
         
     };
+    
+    
+    
+    
+
 }
 
 

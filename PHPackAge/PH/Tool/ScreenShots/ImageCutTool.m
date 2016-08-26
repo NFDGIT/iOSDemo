@@ -1,26 +1,33 @@
 //
-//  ScreenShotView.m
+//  ImageCutTool.m
 //  PHPackAge
 //
-//  Created by wdx on 16/8/24.
+//  Created by wdx on 16/8/26.
 //  Copyright © 2016年 wdx. All rights reserved.
 //
 
-#import "ScreenShotView.h"
-@interface ScreenShotView()
+#import "ImageCutTool.h"
+
+@interface ImageCutTool ()
 @property (nonatomic,strong)UIView * marquee1;
 @property (nonatomic,strong)UIImageView * originImgView;
-
 @end
-@implementation ScreenShotView
+
+@implementation ImageCutTool
 -(instancetype)init{
-    if (self=[super  initWithFrame:[UIScreen mainScreen].bounds] ) {
+    if (self=[super init]) {
         _marqueeW=100;
         _marqueeType=0;
         [self newView];
     }
     return self;
 }
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    // Do any additional setup after loading the view.
+}
+
 -(void)setMarqueeW:(CGFloat)marqueeW{
     _marqueeW=marqueeW;
     _marquee1.layer.borderWidth=Vheight-_marqueeW/2;
@@ -43,9 +50,9 @@
 }
 
 -(void)newView{
-    UIView * bgView=[[UIView alloc]initWithFrame:self.frame];
+    UIView * bgView=[[UIView alloc]initWithFrame:self.view.frame];
     bgView.backgroundColor=[UIColor blackColor];
-    [self addSubview:bgView];
+    [self.view addSubview:bgView];
     bgView.tag=100;
     
     
@@ -53,11 +60,11 @@
     UIPinchGestureRecognizer * pin=[[UIPinchGestureRecognizer alloc]initWithTarget:self action:@selector(pin:)];
     
     
-    _originImgView=[[UIImageView alloc]initWithFrame:self.frame];
+    _originImgView=[[UIImageView alloc]initWithFrame:self.view.frame];
     _originImgView.contentMode=UIViewContentModeScaleAspectFit;
     _originImgView.image=_originImage;
     _originImgView.userInteractionEnabled=YES;
-    [self addSubview:_originImgView];
+    [self.view addSubview:_originImgView];
     _originImgView.tag=101;
     
     [_originImgView addGestureRecognizer:pan];
@@ -71,12 +78,12 @@
     _marquee1.layer.borderColor=[UIColor colorWithRed:.0 green:.0 blue:.0 alpha:.7].CGColor;
     _marquee1.layer.borderWidth=Vheight-_marqueeW/2;
     _marquee1.tag=102;
-    [self addSubview:_marquee1];
+    [self.view addSubview:_marquee1];
     [self changeMarqueeShap];
     
     _marquee1.userInteractionEnabled=NO;
-
-//    [_marquee1 addGestureRecognizer:pan];
+    
+    //    [_marquee1 addGestureRecognizer:pan];
     
     
     
@@ -85,17 +92,17 @@
     [btn setTitle:@"保存" forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(saveOrCancel:) forControlEvents:UIControlEventTouchUpInside];
-    [self addSubview:btn];
+    [self.view addSubview:btn];
     
     
     UIButton * changeShap=[[UIButton alloc]initWithFrame:btn.frame];
     changeShap.width=changeShap.width*2;
-    changeShap.right=self.right-10*self.scale;
+    changeShap.right=self.view.right-10*self.view.scale;
     changeShap.tag=104;
     [changeShap setTitle:@"切换形状" forState:UIControlStateNormal];
     [changeShap setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [changeShap addTarget:self action:@selector(saveOrCancel:) forControlEvents:UIControlEventTouchUpInside];
-    [self addSubview:changeShap];
+    [self.view addSubview:changeShap];
 }
 -(void)changeMarqueeShap{
     if (_marqueeType==MarqueeTypeRound) {
@@ -126,9 +133,9 @@
     CGFloat w;// =_marquee1.width- _marquee1.layer.borderWidth*2;
     w=_marqueeW;
     
-    CGPoint translation = [pan translationInView:self];
+    CGPoint translation = [pan translationInView:self.view];
     pan.view.center = CGPointMake(pan.view.center.x+translation.x,pan.view.center.y+translation.y);
-    [pan setTranslation:CGPointZero inView:self];
+    [pan setTranslation:CGPointZero inView:self.view];
     if (pan.state==UIGestureRecognizerStateEnded) {
         [self changeFrameForGestureView:pan.view];
     }
@@ -157,6 +164,7 @@
 
 
 -(void)saveOrCancel:(UIButton *)sender{
+    
     if (sender.tag==104) {
         _marqueeType++;
         if (_marqueeType>1) {
@@ -165,7 +173,11 @@
         [self changeMarqueeShap];
         return;
     }
-    [self removeFromSuperview];
+
+    [self dismissViewControllerAnimated:NO completion:nil];
+    
+    
+  
     //1.加载原图
     
     UIImage *oldImage= self.originImage;
@@ -174,10 +186,8 @@
     CGFloat x=_marquee1.centerX-w/2;
     CGFloat y=_marquee1.centerY-w/2;
     CGFloat h=w;
-
-    UIImage *newImage ;    
-
     
+    UIImage *newImage ;
     
     UIImageView * oldImgView=_originImgView;
     oldImgView.image=oldImage;
@@ -205,15 +215,15 @@
 -(UIImage *)getImageFromImageView:(UIImageView *)imageView withRect:(CGRect)rect{
     
     
-    CGRect subRect=[self convertRect:rect toView:imageView];
-//    subRect=rect;
+    CGRect subRect=[self.view convertRect:rect toView:imageView];
+    //    subRect=rect;
     
     
     
     //把图片  原来的分辨率  调整为跟view大小一致的分辨率
     UIImage *changedImage=[self createChangedImageWithImageView:imageView];
     //因 本工具要处理的图片 是直接从屏幕上截下来的所以不需要处理
-//    changedImage=imageView.image;
+    //    changedImage=imageView.image;
     UIGraphicsBeginImageContext(subRect.size);
     
     [changedImage drawInRect:CGRectMake(-subRect.origin.x,-subRect.origin.y,changedImage.size.width,changedImage.size.height)];
@@ -232,7 +242,7 @@
     //因 本工具要处理的图片 是直接从屏幕上截下来的所以不需要处理
     
     CGSize size=imageView.bounds.size;
-//    size=CGSizeMake(imageView.bounds.size.width*.5, imageView.bounds.size.height*.5);
+    //    size=CGSizeMake(imageView.bounds.size.width*.5, imageView.bounds.size.height*.5);
     UIGraphicsBeginImageContext(size);
     
     CGContextRef context = UIGraphicsGetCurrentContext();

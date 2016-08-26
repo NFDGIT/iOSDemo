@@ -10,7 +10,6 @@
 		2A0CDBDB1D6EC9AD0012D04A /* PHCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0CDBD31D6EC9AD0012D04A /* PHCalendar.m */; };
 		2A0CDBDC1D6EC9AD0012D04A /* PHCalendarContentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0CDBD51D6EC9AD0012D04A /* PHCalendarContentVC.m */; };
 		2A0CDBDD1D6EC9AD0012D04A /* PHCalendarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0CDBD71D6EC9AD0012D04A /* PHCalendarItem.m */; };
-		2A0CDBDE1D6EC9AD0012D04A /* ScreenShotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0CDBDA1D6EC9AD0012D04A /* ScreenShotView.m */; };
 		2A40CB671D5AB2BB00BF7A80 /* UIImage+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A40CB661D5AB2BB00BF7A80 /* UIImage+Helper.m */; };
 		2A4374F11D61AEAF00E02202 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A4374D71D61AEAF00E02202 /* Info.plist */; };
 		2A4374F21D61AEAF00E02202 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4374D91D61AEAF00E02202 /* MASCompositeConstraint.m */; };
@@ -23,6 +22,7 @@
 		2A4374F91D61AEAF00E02202 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4374EB1D61AEAF00E02202 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		2A4374FA1D61AEAF00E02202 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4374ED1D61AEAF00E02202 /* View+MASAdditions.m */; };
 		2A4374FB1D61AEAF00E02202 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4374F01D61AEAF00E02202 /* ViewController+MASAdditions.m */; };
+		2A45B9791D70174E00077248 /* ImageCutTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A45B9781D70174E00077248 /* ImageCutTool.m */; };
 		2A45CA531D62A91500F7D9DA /* example.html in Resources */ = {isa = PBXBuildFile; fileRef = 2A45CA521D62A91500F7D9DA /* example.html */; };
 		2A54E44C1D5D7828008CA6D2 /* PHPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A54E44B1D5D7828008CA6D2 /* PHPrinter.m */; };
 		2A5DEA8E1D65482E00155CAC /* index.w.html in Resources */ = {isa = PBXBuildFile; fileRef = 2A5DEA8D1D65482E00155CAC /* index.w.html */; };
@@ -46,8 +46,6 @@
 		2A0CDBD51D6EC9AD0012D04A /* PHCalendarContentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHCalendarContentVC.m; sourceTree = "<group>"; };
 		2A0CDBD61D6EC9AD0012D04A /* PHCalendarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHCalendarItem.h; sourceTree = "<group>"; };
 		2A0CDBD71D6EC9AD0012D04A /* PHCalendarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHCalendarItem.m; sourceTree = "<group>"; };
-		2A0CDBD91D6EC9AD0012D04A /* ScreenShotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenShotView.h; sourceTree = "<group>"; };
-		2A0CDBDA1D6EC9AD0012D04A /* ScreenShotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenShotView.m; sourceTree = "<group>"; };
 		2A40CB651D5AB2BB00BF7A80 /* UIImage+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Helper.h"; sourceTree = "<group>"; };
 		2A40CB661D5AB2BB00BF7A80 /* UIImage+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Helper.m"; sourceTree = "<group>"; };
 		2A4374D71D61AEAF00E02202 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +74,8 @@
 		2A4374EE1D61AEAF00E02202 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		2A4374EF1D61AEAF00E02202 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		2A4374F01D61AEAF00E02202 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		2A45B9771D70174E00077248 /* ImageCutTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCutTool.h; sourceTree = "<group>"; };
+		2A45B9781D70174E00077248 /* ImageCutTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCutTool.m; sourceTree = "<group>"; };
 		2A45CA521D62A91500F7D9DA /* example.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = example.html; sourceTree = "<group>"; };
 		2A54E44A1D5D7828008CA6D2 /* PHPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHPrinter.h; path = Printer/PHPrinter.h; sourceTree = "<group>"; };
 		2A54E44B1D5D7828008CA6D2 /* PHPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHPrinter.m; path = Printer/PHPrinter.m; sourceTree = "<group>"; };
@@ -138,8 +138,8 @@
 		2A0CDBD81D6EC9AD0012D04A /* ScreenShots */ = {
 			isa = PBXGroup;
 			children = (
-				2A0CDBD91D6EC9AD0012D04A /* ScreenShotView.h */,
-				2A0CDBDA1D6EC9AD0012D04A /* ScreenShotView.m */,
+				2A45B9771D70174E00077248 /* ImageCutTool.h */,
+				2A45B9781D70174E00077248 /* ImageCutTool.m */,
 			);
 			path = ScreenShots;
 			sourceTree = "<group>";
@@ -355,7 +355,6 @@
 				2A4374F91D61AEAF00E02202 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				2A4374F51D61AEAF00E02202 /* MASLayoutConstraint.m in Sources */,
 				2A4374FB1D61AEAF00E02202 /* ViewController+MASAdditions.m in Sources */,
-				2A0CDBDE1D6EC9AD0012D04A /* ScreenShotView.m in Sources */,
 				2A4374F41D61AEAF00E02202 /* MASConstraintMaker.m in Sources */,
 				2A0CDBDC1D6EC9AD0012D04A /* PHCalendarContentVC.m in Sources */,
 				2A6FC3CD1D2DF16E0006CBE2 /* PHCellView.m in Sources */,
@@ -363,6 +362,7 @@
 				2A54E44C1D5D7828008CA6D2 /* PHPrinter.m in Sources */,
 				2A4374F81D61AEAF00E02202 /* NSArray+MASAdditions.m in Sources */,
 				2A4374F61D61AEAF00E02202 /* MASViewAttribute.m in Sources */,
+				2A45B9791D70174E00077248 /* ImageCutTool.m in Sources */,
 				2A4374F31D61AEAF00E02202 /* MASConstraint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

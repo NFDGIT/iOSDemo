@@ -1,19 +1,18 @@
 //
-//  ScreenShotView.h
+//  ImageCutTool.h
 //  PHPackAge
 //
-//  Created by wdx on 16/8/24.
+//  Created by wdx on 16/8/26.
 //  Copyright © 2016年 wdx. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SuperViewController.h"
 #import "PHDefine.h"
 typedef NS_ENUM(NSInteger,MarqueeType){
     MarqueeTypeRect =0,
     MarqueeTypeRound =1
 };
-
-@interface ScreenShotView : UIView
+@interface ImageCutTool : SuperViewController
 @property (nonatomic,assign)CGFloat marqueeW;
 @property (nonatomic,assign)MarqueeType marqueeType;
 @property (nonatomic,strong)UIImage * originImage;
