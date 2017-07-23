@@ -11,12 +11,13 @@
 @interface ImageCutTool ()
 @property (nonatomic,strong)UIView * marquee1;
 @property (nonatomic,strong)UIImageView * originImgView;
+
 @end
 
 @implementation ImageCutTool
 -(instancetype)init{
     if (self=[super init]) {
-        _marqueeW=100;
+        _marqueeW=200;
         _marqueeType=0;
         [self newView];
     }
@@ -97,12 +98,24 @@
     
     UIButton * changeShap=[[UIButton alloc]initWithFrame:btn.frame];
     changeShap.width=changeShap.width*2;
-    changeShap.right=self.view.right-10*self.view.scale;
+    changeShap.centerX=self.view.centerX;
     changeShap.tag=104;
     [changeShap setTitle:@"切换形状" forState:UIControlStateNormal];
     [changeShap setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [changeShap addTarget:self action:@selector(saveOrCancel:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:changeShap];
+    
+    
+    UIButton * cancelBtn=[[UIButton alloc]initWithFrame:CGRectMake(Vwidth-10-btn.width, btn.top, btn.width, btn.height)];
+    cancelBtn.width=btn.width;
+//    cancelBtn.right=100;
+    
+    cancelBtn.tag=105;
+    [cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
+    [cancelBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [cancelBtn addTarget:self action:@selector(saveOrCancel:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:cancelBtn];
+    
 }
 -(void)changeMarqueeShap{
     if (_marqueeType==MarqueeTypeRound) {
@@ -173,25 +186,28 @@
         [self changeMarqueeShap];
         return;
     }
+    if (sender.tag==105) {
+        [self dismissViewControllerAnimated:NO completion:nil];
+        [self.navigationController popViewControllerAnimated:YES];
+        return;
+    }
 
-    [self dismissViewControllerAnimated:NO completion:nil];
-    
-    
-  
     //1.加载原图
     
     UIImage *oldImage= self.originImage;
     
     CGFloat w =_marquee1.width- _marquee1.layer.borderWidth*2;
-    CGFloat x=_marquee1.centerX-w/2;
-    CGFloat y=_marquee1.centerY-w/2;
     CGFloat h=w;
+    
+    CGFloat x=_marquee1.centerX-w/2;
+    CGFloat y=_marquee1.centerY-h/2;
+  
     
     UIImage *newImage ;
     
     UIImageView * oldImgView=_originImgView;
     oldImgView.image=oldImage;
-    newImage =[self getImageFromImageView:oldImgView withRect:CGRectMake(x, y, w, h)];
+    newImage =[self getImageFromImageView:_originImgView withRect:CGRectMake(x, y, w, h)];
     UIGraphicsBeginImageContext(CGSizeMake(newImage.size.width, newImage.size.height));
     CGContextRef ctx= UIGraphicsGetCurrentContext();
     if (_marqueeType==MarqueeTypeRect) {
@@ -208,22 +224,24 @@
     if (_block) {
         _block(newImage);
     }
-    
+    [self dismissViewControllerAnimated:NO completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 #pragma mark - 图片裁剪
 //裁剪修改后的图片
 -(UIImage *)getImageFromImageView:(UIImageView *)imageView withRect:(CGRect)rect{
-    
-    
+    CGFloat scale= imageView.image.size.width/Vwidth;
+   
     CGRect subRect=[self.view convertRect:rect toView:imageView];
-    //    subRect=rect;
     
-    
-    
+    subRect=CGRectMake(subRect.origin.x * scale, subRect.origin.y *scale, subRect.size.width *scale, subRect.size.height * scale);
+   
     //把图片  原来的分辨率  调整为跟view大小一致的分辨率
     UIImage *changedImage=[self createChangedImageWithImageView:imageView];
     //因 本工具要处理的图片 是直接从屏幕上截下来的所以不需要处理
-    //    changedImage=imageView.image;
+   changedImage =imageView.image;
+    
+    
     UIGraphicsBeginImageContext(subRect.size);
     
     [changedImage drawInRect:CGRectMake(-subRect.origin.x,-subRect.origin.y,changedImage.size.width,changedImage.size.height)];
