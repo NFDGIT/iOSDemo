@@ -59,6 +59,63 @@
 		2A797ECE1D6DA072008B0459 /* 111.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A797ECD1D6DA072008B0459 /* 111.jpg */; };
 		2AB68FAF1D5C3CE100C98438 /* SuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB68FAE1D5C3CE100C98438 /* SuperViewController.m */; };
 		820EE39F0676A9C4EF7102DC /* libPods-PHPackAge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2658EE9FD4E434EBCF6D2150 /* libPods-PHPackAge.a */; };
+		EF035BC6200C7C9F0071EED4 /* DemoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF035BC5200C7C9F0071EED4 /* DemoTableViewCell.m */; };
+		EF035BD5200CD1740071EED4 /* PHCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = EF035BD3200CD1730071EED4 /* PHCellHeight.m */; };
+		EF055EA11FFE204E0095936D /* PHRishShowWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF055EA01FFE204E0095936D /* PHRishShowWebView.m */; };
+		EF0893ED1FE6717400BFB882 /* PHImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0893EC1FE6717400BFB882 /* PHImagePickerController.m */; };
+		EF0893F01FE67D4D00BFB882 /* PHRishEditModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0893EF1FE67D4D00BFB882 /* PHRishEditModel.m */; };
+		EF34273F1FE64CA900F80440 /* PHRishEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34273E1FE64CA900F80440 /* PHRishEditViewController.m */; };
+		EF3427421FE64CD600F80440 /* PHRishEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3427411FE64CD600F80440 /* PHRishEditView.m */; };
+		EF3427451FE64CEC00F80440 /* PHRishEditCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3427441FE64CEC00F80440 /* PHRishEditCellView.m */; };
+		EF3427481FE6518D00F80440 /* PHRishEditTextCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3427471FE6518D00F80440 /* PHRishEditTextCellView.m */; };
+		EF34274B1FE651A600F80440 /* PHRishEditImgCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34274A1FE651A600F80440 /* PHRishEditImgCellView.m */; };
+		EF5D14B21FE3D368003592B2 /* PHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D14B11FE3D368003592B2 /* PHBaseViewController.m */; };
+		EF6EBFE41FFCAF8D00814891 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6EBFE31FFCAF8D00814891 /* DemoViewController.m */; };
+		EF783F0F2008763600454EB6 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783ECF2008763600454EB6 /* NSObject+Extension.swift */; };
+		EF783F102008763600454EB6 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783ED02008763600454EB6 /* UIView+Extension.swift */; };
+		EF783F112008763600454EB6 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783ED12008763600454EB6 /* String+Extension.swift */; };
+		EF783F122008763600454EB6 /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783ED22008763600454EB6 /* UIScrollView+Extension.swift */; };
+		EF783F132008763600454EB6 /* UIPageViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783ED32008763600454EB6 /* UIPageViewController+Extension.swift */; };
+		EF783F142008763600454EB6 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783ED42008763600454EB6 /* UITableView+Extension.swift */; };
+		EF783F152008763600454EB6 /* DZMSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783ED62008763600454EB6 /* DZMSegmentedControl.swift */; };
+		EF783F162008763600454EB6 /* DZMHaloButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783ED72008763600454EB6 /* DZMHaloButton.swift */; };
+		EF783F172008763600454EB6 /* DZMUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783ED82008763600454EB6 /* DZMUserDefaults.swift */; };
+		EF783F182008763600454EB6 /* DZMGlobalMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783EDA2008763600454EB6 /* DZMGlobalMethod.swift */; };
+		EF783F192008763600454EB6 /* DZMGlobalProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783EDB2008763600454EB6 /* DZMGlobalProperty.swift */; };
+		EF783F1A2008763600454EB6 /* DZMCoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF783EDF2008763600454EB6 /* DZMCoverController.m */; };
+		EF783F1B2008763600454EB6 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = EF783EE22008763600454EB6 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		EF783F1C2008763600454EB6 /* ASValuePopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF783EE62008763600454EB6 /* ASValuePopUpView.m */; };
+		EF783F1D2008763600454EB6 /* ASValueTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = EF783EE72008763600454EB6 /* ASValueTrackingSlider.m */; };
+		EF783F1E2008763600454EB6 /* UIView+YGPulseView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF783EE92008763600454EB6 /* UIView+YGPulseView.m */; };
+		EF783F1F2008763600454EB6 /* DZMMagnifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF783EED2008763600454EB6 /* DZMMagnifierView.m */; };
+		EF783F202008763600454EB6 /* DZMBatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783EEE2008763600454EB6 /* DZMBatteryView.swift */; };
+		EF783F212008763600454EB6 /* DZMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783EF02008763600454EB6 /* DZMViewController.swift */; };
+		EF783F222008763600454EB6 /* DZMReadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783EF22008763600454EB6 /* DZMReadOperation.swift */; };
+		EF783F232008763600454EB6 /* DZMReadParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783EF32008763600454EB6 /* DZMReadParser.swift */; };
+		EF783F242008763600454EB6 /* DZMReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783EF42008763600454EB6 /* DZMReadViewController.swift */; };
+		EF783F252008763600454EB6 /* DZMReadConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783EF52008763600454EB6 /* DZMReadConfigure.swift */; };
+		EF783F262008763600454EB6 /* DZMReadAuxiliary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783EF62008763600454EB6 /* DZMReadAuxiliary.swift */; };
+		EF783F272008763600454EB6 /* DZMReadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783EF72008763600454EB6 /* DZMReadController.swift */; };
+		EF783F282008763600454EB6 /* DZMReadBGController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783EF82008763600454EB6 /* DZMReadBGController.swift */; };
+		EF783F292008763600454EB6 /* DZMRMColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783EFB2008763600454EB6 /* DZMRMColorView.swift */; };
+		EF783F2A2008763600454EB6 /* DZMRMSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783EFC2008763600454EB6 /* DZMRMSettingView.swift */; };
+		EF783F2B2008763600454EB6 /* DZMRMFuncView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783EFD2008763600454EB6 /* DZMRMFuncView.swift */; };
+		EF783F2C2008763600454EB6 /* DZMRMBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783EFE2008763600454EB6 /* DZMRMBottomView.swift */; };
+		EF783F2D2008763600454EB6 /* DZMRMStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783EFF2008763600454EB6 /* DZMRMStatusView.swift */; };
+		EF783F2E2008763600454EB6 /* DZMRMLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783F002008763600454EB6 /* DZMRMLeftView.swift */; };
+		EF783F2F2008763600454EB6 /* DZMReadMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783F012008763600454EB6 /* DZMReadMenu.swift */; };
+		EF783F302008763600454EB6 /* DZMRMTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783F022008763600454EB6 /* DZMRMTopView.swift */; };
+		EF783F312008763600454EB6 /* DZMRMBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783F032008763600454EB6 /* DZMRMBaseView.swift */; };
+		EF783F322008763600454EB6 /* DZMRMLightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783F042008763600454EB6 /* DZMRMLightView.swift */; };
+		EF783F332008763600454EB6 /* DZMReadRecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783F062008763600454EB6 /* DZMReadRecordModel.swift */; };
+		EF783F342008763600454EB6 /* DZMReadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783F072008763600454EB6 /* DZMReadModel.swift */; };
+		EF783F352008763600454EB6 /* DZMReadChapterListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783F082008763600454EB6 /* DZMReadChapterListModel.swift */; };
+		EF783F362008763600454EB6 /* DZMReadMarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783F092008763600454EB6 /* DZMReadMarkModel.swift */; };
+		EF783F372008763600454EB6 /* DZMReadChapterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783F0A2008763600454EB6 /* DZMReadChapterModel.swift */; };
+		EF783F382008763600454EB6 /* DZMReadViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783F0C2008763600454EB6 /* DZMReadViewCell.swift */; };
+		EF783F392008763600454EB6 /* DZMCursorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783F0D2008763600454EB6 /* DZMCursorView.swift */; };
+		EF783F3A2008763600454EB6 /* DZMReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783F0E2008763600454EB6 /* DZMReadView.swift */; };
+		EF783F3D200883AD00454EB6 /* ReaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783F3C200883AD00454EB6 /* ReaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -167,6 +224,82 @@
 		2AB68FAE1D5C3CE100C98438 /* SuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperViewController.m; sourceTree = "<group>"; };
 		3871CAFF40709CC18DB91D79 /* Pods-PHPackAge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PHPackAge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PHPackAge/Pods-PHPackAge.debug.xcconfig"; sourceTree = "<group>"; };
 		96D417F52CC9ABAF58199255 /* Pods-PHPackAge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PHPackAge.release.xcconfig"; path = "Pods/Target Support Files/Pods-PHPackAge/Pods-PHPackAge.release.xcconfig"; sourceTree = "<group>"; };
+		EF035BC4200C7C9F0071EED4 /* DemoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoTableViewCell.h; sourceTree = "<group>"; };
+		EF035BC5200C7C9F0071EED4 /* DemoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTableViewCell.m; sourceTree = "<group>"; };
+		EF035BD3200CD1730071EED4 /* PHCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHCellHeight.m; sourceTree = "<group>"; };
+		EF035BD4200CD1730071EED4 /* PHCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHCellHeight.h; sourceTree = "<group>"; };
+		EF055E9F1FFE204E0095936D /* PHRishShowWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHRishShowWebView.h; sourceTree = "<group>"; };
+		EF055EA01FFE204E0095936D /* PHRishShowWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHRishShowWebView.m; sourceTree = "<group>"; };
+		EF0893EB1FE6717400BFB882 /* PHImagePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHImagePickerController.h; sourceTree = "<group>"; };
+		EF0893EC1FE6717400BFB882 /* PHImagePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHImagePickerController.m; sourceTree = "<group>"; };
+		EF0893EE1FE67D4D00BFB882 /* PHRishEditModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHRishEditModel.h; sourceTree = "<group>"; };
+		EF0893EF1FE67D4D00BFB882 /* PHRishEditModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHRishEditModel.m; sourceTree = "<group>"; };
+		EF34273D1FE64CA900F80440 /* PHRishEditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHRishEditViewController.h; sourceTree = "<group>"; };
+		EF34273E1FE64CA900F80440 /* PHRishEditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHRishEditViewController.m; sourceTree = "<group>"; };
+		EF3427401FE64CD600F80440 /* PHRishEditView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHRishEditView.h; sourceTree = "<group>"; };
+		EF3427411FE64CD600F80440 /* PHRishEditView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHRishEditView.m; sourceTree = "<group>"; };
+		EF3427431FE64CEC00F80440 /* PHRishEditCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHRishEditCellView.h; sourceTree = "<group>"; };
+		EF3427441FE64CEC00F80440 /* PHRishEditCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHRishEditCellView.m; sourceTree = "<group>"; };
+		EF3427461FE6518D00F80440 /* PHRishEditTextCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHRishEditTextCellView.h; sourceTree = "<group>"; };
+		EF3427471FE6518D00F80440 /* PHRishEditTextCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHRishEditTextCellView.m; sourceTree = "<group>"; };
+		EF3427491FE651A600F80440 /* PHRishEditImgCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHRishEditImgCellView.h; sourceTree = "<group>"; };
+		EF34274A1FE651A600F80440 /* PHRishEditImgCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHRishEditImgCellView.m; sourceTree = "<group>"; };
+		EF5D14B01FE3D368003592B2 /* PHBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHBaseViewController.h; sourceTree = "<group>"; };
+		EF5D14B11FE3D368003592B2 /* PHBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHBaseViewController.m; sourceTree = "<group>"; };
+		EF6EBFE21FFCAF8D00814891 /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		EF6EBFE31FFCAF8D00814891 /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		EF783ECF2008763600454EB6 /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		EF783ED02008763600454EB6 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		EF783ED12008763600454EB6 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		EF783ED22008763600454EB6 /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extension.swift"; sourceTree = "<group>"; };
+		EF783ED32008763600454EB6 /* UIPageViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPageViewController+Extension.swift"; sourceTree = "<group>"; };
+		EF783ED42008763600454EB6 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		EF783ED62008763600454EB6 /* DZMSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMSegmentedControl.swift; sourceTree = "<group>"; };
+		EF783ED72008763600454EB6 /* DZMHaloButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMHaloButton.swift; sourceTree = "<group>"; };
+		EF783ED82008763600454EB6 /* DZMUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMUserDefaults.swift; sourceTree = "<group>"; };
+		EF783EDA2008763600454EB6 /* DZMGlobalMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMGlobalMethod.swift; sourceTree = "<group>"; };
+		EF783EDB2008763600454EB6 /* DZMGlobalProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMGlobalProperty.swift; sourceTree = "<group>"; };
+		EF783EDE2008763600454EB6 /* DZMCoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMCoverController.h; sourceTree = "<group>"; };
+		EF783EDF2008763600454EB6 /* DZMCoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMCoverController.m; sourceTree = "<group>"; };
+		EF783EE12008763600454EB6 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		EF783EE22008763600454EB6 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		EF783EE42008763600454EB6 /* ASValuePopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValuePopUpView.h; sourceTree = "<group>"; };
+		EF783EE52008763600454EB6 /* ASValueTrackingSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValueTrackingSlider.h; sourceTree = "<group>"; };
+		EF783EE62008763600454EB6 /* ASValuePopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValuePopUpView.m; sourceTree = "<group>"; };
+		EF783EE72008763600454EB6 /* ASValueTrackingSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValueTrackingSlider.m; sourceTree = "<group>"; };
+		EF783EE92008763600454EB6 /* UIView+YGPulseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YGPulseView.m"; sourceTree = "<group>"; };
+		EF783EEA2008763600454EB6 /* UIView+YGPulseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YGPulseView.h"; sourceTree = "<group>"; };
+		EF783EEC2008763600454EB6 /* DZMMagnifierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMMagnifierView.h; sourceTree = "<group>"; };
+		EF783EED2008763600454EB6 /* DZMMagnifierView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMMagnifierView.m; sourceTree = "<group>"; };
+		EF783EEE2008763600454EB6 /* DZMBatteryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMBatteryView.swift; sourceTree = "<group>"; };
+		EF783EF02008763600454EB6 /* DZMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMViewController.swift; sourceTree = "<group>"; };
+		EF783EF22008763600454EB6 /* DZMReadOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMReadOperation.swift; sourceTree = "<group>"; };
+		EF783EF32008763600454EB6 /* DZMReadParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMReadParser.swift; sourceTree = "<group>"; };
+		EF783EF42008763600454EB6 /* DZMReadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMReadViewController.swift; sourceTree = "<group>"; };
+		EF783EF52008763600454EB6 /* DZMReadConfigure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMReadConfigure.swift; sourceTree = "<group>"; };
+		EF783EF62008763600454EB6 /* DZMReadAuxiliary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMReadAuxiliary.swift; sourceTree = "<group>"; };
+		EF783EF72008763600454EB6 /* DZMReadController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMReadController.swift; sourceTree = "<group>"; };
+		EF783EF82008763600454EB6 /* DZMReadBGController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMReadBGController.swift; sourceTree = "<group>"; };
+		EF783EFB2008763600454EB6 /* DZMRMColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMRMColorView.swift; sourceTree = "<group>"; };
+		EF783EFC2008763600454EB6 /* DZMRMSettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMRMSettingView.swift; sourceTree = "<group>"; };
+		EF783EFD2008763600454EB6 /* DZMRMFuncView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMRMFuncView.swift; sourceTree = "<group>"; };
+		EF783EFE2008763600454EB6 /* DZMRMBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMRMBottomView.swift; sourceTree = "<group>"; };
+		EF783EFF2008763600454EB6 /* DZMRMStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMRMStatusView.swift; sourceTree = "<group>"; };
+		EF783F002008763600454EB6 /* DZMRMLeftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMRMLeftView.swift; sourceTree = "<group>"; };
+		EF783F012008763600454EB6 /* DZMReadMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMReadMenu.swift; sourceTree = "<group>"; };
+		EF783F022008763600454EB6 /* DZMRMTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMRMTopView.swift; sourceTree = "<group>"; };
+		EF783F032008763600454EB6 /* DZMRMBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMRMBaseView.swift; sourceTree = "<group>"; };
+		EF783F042008763600454EB6 /* DZMRMLightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMRMLightView.swift; sourceTree = "<group>"; };
+		EF783F062008763600454EB6 /* DZMReadRecordModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMReadRecordModel.swift; sourceTree = "<group>"; };
+		EF783F072008763600454EB6 /* DZMReadModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMReadModel.swift; sourceTree = "<group>"; };
+		EF783F082008763600454EB6 /* DZMReadChapterListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMReadChapterListModel.swift; sourceTree = "<group>"; };
+		EF783F092008763600454EB6 /* DZMReadMarkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMReadMarkModel.swift; sourceTree = "<group>"; };
+		EF783F0A2008763600454EB6 /* DZMReadChapterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMReadChapterModel.swift; sourceTree = "<group>"; };
+		EF783F0C2008763600454EB6 /* DZMReadViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMReadViewCell.swift; sourceTree = "<group>"; };
+		EF783F0D2008763600454EB6 /* DZMCursorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMCursorView.swift; sourceTree = "<group>"; };
+		EF783F0E2008763600454EB6 /* DZMReadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMReadView.swift; sourceTree = "<group>"; };
+		EF783F3B2008798000454EB6 /* PHPackage-Bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHPackage-Bridging.h"; sourceTree = "<group>"; };
+		EF783F3C200883AD00454EB6 /* ReaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +353,8 @@
 		0AB666801F24360B00329AE1 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				EF035BD4200CD1730071EED4 /* PHCellHeight.h */,
+				EF035BD3200CD1730071EED4 /* PHCellHeight.m */,
 				0AB666811F24360B00329AE1 /* NSString+Helper.h */,
 				0AB666821F24360B00329AE1 /* NSString+Helper.m */,
 				0AB666831F24360B00329AE1 /* UIButton+Helper.h */,
@@ -332,6 +467,7 @@
 		2A0CDBD01D6EC9AD0012D04A /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				EF0893EA1FE6713300BFB882 /* PHImagePickerController */,
 				0AB666741F24360B00329AE1 /* PHPush */,
 				0AB666771F24360B00329AE1 /* RunTimeHelper */,
 				0AB6667A1F24360B00329AE1 /* ScreenPassWord */,
@@ -447,6 +583,7 @@
 		2A6FC3AD1D2DF1430006CBE2 /* PHPackAge */ = {
 			isa = PBXGroup;
 			children = (
+				EF5D14B31FE3D785003592B2 /* ViewControllers */,
 				2A45CA511D62A91500F7D9DA /* HTML */,
 				2A4374D51D61AEAF00E02202 /* 3th */,
 				2A6FC3C51D2DF16E0006CBE2 /* PH */,
@@ -454,6 +591,7 @@
 				2A6FC3B21D2DF1430006CBE2 /* AppDelegate.m */,
 				2A6FC3D31D2DF1950006CBE2 /* ViewController.h */,
 				2A6FC3D41D2DF1950006CBE2 /* ViewController.m */,
+				EF783F3B2008798000454EB6 /* PHPackage-Bridging.h */,
 				2A6FC3B71D2DF1430006CBE2 /* Main.storyboard */,
 				2A6FC3BA1D2DF1430006CBE2 /* Assets.xcassets */,
 				2A6FC3BC1D2DF1430006CBE2 /* LaunchScreen.storyboard */,
@@ -474,6 +612,8 @@
 		2A6FC3C51D2DF16E0006CBE2 /* PH */ = {
 			isa = PBXGroup;
 			children = (
+				EF783ECA2008763600454EB6 /* EReader */,
+				EF5D14AF1FE3D342003592B2 /* Base */,
 				2A0CDBD01D6EC9AD0012D04A /* Tool */,
 				2A54E4491D5D75D4008CA6D2 /* 打印机 */,
 				2A40CB651D5AB2BB00BF7A80 /* UIImage+Helper.h */,
@@ -506,6 +646,259 @@
 				2658EE9FD4E434EBCF6D2150 /* libPods-PHPackAge.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF0893EA1FE6713300BFB882 /* PHImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				EF0893EB1FE6717400BFB882 /* PHImagePickerController.h */,
+				EF0893EC1FE6717400BFB882 /* PHImagePickerController.m */,
+			);
+			path = PHImagePickerController;
+			sourceTree = "<group>";
+		};
+		EF5D14AF1FE3D342003592B2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EF5D14B01FE3D368003592B2 /* PHBaseViewController.h */,
+				EF5D14B11FE3D368003592B2 /* PHBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EF5D14B31FE3D785003592B2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF6EBFE11FFCAF6900814891 /* 测试 */,
+				EF5D14B41FE3D79E003592B2 /* 富文本编辑器 */,
+				EF783F3C200883AD00454EB6 /* ReaViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EF5D14B41FE3D79E003592B2 /* 富文本编辑器 */ = {
+			isa = PBXGroup;
+			children = (
+				EF34273D1FE64CA900F80440 /* PHRishEditViewController.h */,
+				EF34273E1FE64CA900F80440 /* PHRishEditViewController.m */,
+				EF0893EE1FE67D4D00BFB882 /* PHRishEditModel.h */,
+				EF0893EF1FE67D4D00BFB882 /* PHRishEditModel.m */,
+				EF3427401FE64CD600F80440 /* PHRishEditView.h */,
+				EF3427411FE64CD600F80440 /* PHRishEditView.m */,
+				EF3427431FE64CEC00F80440 /* PHRishEditCellView.h */,
+				EF3427441FE64CEC00F80440 /* PHRishEditCellView.m */,
+				EF3427461FE6518D00F80440 /* PHRishEditTextCellView.h */,
+				EF3427471FE6518D00F80440 /* PHRishEditTextCellView.m */,
+				EF3427491FE651A600F80440 /* PHRishEditImgCellView.h */,
+				EF34274A1FE651A600F80440 /* PHRishEditImgCellView.m */,
+			);
+			path = "富文本编辑器";
+			sourceTree = "<group>";
+		};
+		EF6EBFE11FFCAF6900814891 /* 测试 */ = {
+			isa = PBXGroup;
+			children = (
+				EF6EBFE21FFCAF8D00814891 /* DemoViewController.h */,
+				EF6EBFE31FFCAF8D00814891 /* DemoViewController.m */,
+				EF035BC4200C7C9F0071EED4 /* DemoTableViewCell.h */,
+				EF035BC5200C7C9F0071EED4 /* DemoTableViewCell.m */,
+				EF055E9F1FFE204E0095936D /* PHRishShowWebView.h */,
+				EF055EA01FFE204E0095936D /* PHRishShowWebView.m */,
+			);
+			path = "测试";
+			sourceTree = "<group>";
+		};
+		EF783ECA2008763600454EB6 /* EReader */ = {
+			isa = PBXGroup;
+			children = (
+				EF783ECB2008763600454EB6 /* DZMeBookRead */,
+			);
+			path = EReader;
+			sourceTree = "<group>";
+		};
+		EF783ECB2008763600454EB6 /* DZMeBookRead */ = {
+			isa = PBXGroup;
+			children = (
+				EF783ECC2008763600454EB6 /* other */,
+				EF783EF12008763600454EB6 /* controller */,
+				EF783EF92008763600454EB6 /* menuUI */,
+				EF783F052008763600454EB6 /* model */,
+				EF783F0B2008763600454EB6 /* view */,
+			);
+			path = DZMeBookRead;
+			sourceTree = "<group>";
+		};
+		EF783ECC2008763600454EB6 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				EF783ECE2008763600454EB6 /* extension */,
+				EF783ED52008763600454EB6 /* custom */,
+				EF783ED92008763600454EB6 /* global */,
+				EF783EDC2008763600454EB6 /* thirdParty */,
+				EF783EEF2008763600454EB6 /* base */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		EF783ECE2008763600454EB6 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				EF783ECF2008763600454EB6 /* NSObject+Extension.swift */,
+				EF783ED02008763600454EB6 /* UIView+Extension.swift */,
+				EF783ED12008763600454EB6 /* String+Extension.swift */,
+				EF783ED22008763600454EB6 /* UIScrollView+Extension.swift */,
+				EF783ED32008763600454EB6 /* UIPageViewController+Extension.swift */,
+				EF783ED42008763600454EB6 /* UITableView+Extension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		EF783ED52008763600454EB6 /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				EF783ED62008763600454EB6 /* DZMSegmentedControl.swift */,
+				EF783ED72008763600454EB6 /* DZMHaloButton.swift */,
+				EF783ED82008763600454EB6 /* DZMUserDefaults.swift */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
+		EF783ED92008763600454EB6 /* global */ = {
+			isa = PBXGroup;
+			children = (
+				EF783EDA2008763600454EB6 /* DZMGlobalMethod.swift */,
+				EF783EDB2008763600454EB6 /* DZMGlobalProperty.swift */,
+			);
+			path = global;
+			sourceTree = "<group>";
+		};
+		EF783EDC2008763600454EB6 /* thirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				EF783EDD2008763600454EB6 /* DZMCoverController */,
+				EF783EE02008763600454EB6 /* FDFullscreenPopGesture */,
+				EF783EE32008763600454EB6 /* ASValueTrackingSlider */,
+				EF783EE82008763600454EB6 /* YGPulseView */,
+				EF783EEB2008763600454EB6 /* DZMMagnifierView */,
+				EF783EEE2008763600454EB6 /* DZMBatteryView.swift */,
+			);
+			path = thirdParty;
+			sourceTree = "<group>";
+		};
+		EF783EDD2008763600454EB6 /* DZMCoverController */ = {
+			isa = PBXGroup;
+			children = (
+				EF783EDE2008763600454EB6 /* DZMCoverController.h */,
+				EF783EDF2008763600454EB6 /* DZMCoverController.m */,
+			);
+			path = DZMCoverController;
+			sourceTree = "<group>";
+		};
+		EF783EE02008763600454EB6 /* FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				EF783EE12008763600454EB6 /* UINavigationController+FDFullscreenPopGesture.h */,
+				EF783EE22008763600454EB6 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = FDFullscreenPopGesture;
+			sourceTree = "<group>";
+		};
+		EF783EE32008763600454EB6 /* ASValueTrackingSlider */ = {
+			isa = PBXGroup;
+			children = (
+				EF783EE42008763600454EB6 /* ASValuePopUpView.h */,
+				EF783EE52008763600454EB6 /* ASValueTrackingSlider.h */,
+				EF783EE62008763600454EB6 /* ASValuePopUpView.m */,
+				EF783EE72008763600454EB6 /* ASValueTrackingSlider.m */,
+			);
+			path = ASValueTrackingSlider;
+			sourceTree = "<group>";
+		};
+		EF783EE82008763600454EB6 /* YGPulseView */ = {
+			isa = PBXGroup;
+			children = (
+				EF783EE92008763600454EB6 /* UIView+YGPulseView.m */,
+				EF783EEA2008763600454EB6 /* UIView+YGPulseView.h */,
+			);
+			path = YGPulseView;
+			sourceTree = "<group>";
+		};
+		EF783EEB2008763600454EB6 /* DZMMagnifierView */ = {
+			isa = PBXGroup;
+			children = (
+				EF783EEC2008763600454EB6 /* DZMMagnifierView.h */,
+				EF783EED2008763600454EB6 /* DZMMagnifierView.m */,
+			);
+			path = DZMMagnifierView;
+			sourceTree = "<group>";
+		};
+		EF783EEF2008763600454EB6 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				EF783EF02008763600454EB6 /* DZMViewController.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		EF783EF12008763600454EB6 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF783EF22008763600454EB6 /* DZMReadOperation.swift */,
+				EF783EF32008763600454EB6 /* DZMReadParser.swift */,
+				EF783EF42008763600454EB6 /* DZMReadViewController.swift */,
+				EF783EF52008763600454EB6 /* DZMReadConfigure.swift */,
+				EF783EF62008763600454EB6 /* DZMReadAuxiliary.swift */,
+				EF783EF72008763600454EB6 /* DZMReadController.swift */,
+				EF783EF82008763600454EB6 /* DZMReadBGController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		EF783EF92008763600454EB6 /* menuUI */ = {
+			isa = PBXGroup;
+			children = (
+				EF783EFA2008763600454EB6 /* DZMRMSettingView */,
+				EF783EFE2008763600454EB6 /* DZMRMBottomView.swift */,
+				EF783EFF2008763600454EB6 /* DZMRMStatusView.swift */,
+				EF783F002008763600454EB6 /* DZMRMLeftView.swift */,
+				EF783F012008763600454EB6 /* DZMReadMenu.swift */,
+				EF783F022008763600454EB6 /* DZMRMTopView.swift */,
+				EF783F032008763600454EB6 /* DZMRMBaseView.swift */,
+				EF783F042008763600454EB6 /* DZMRMLightView.swift */,
+			);
+			path = menuUI;
+			sourceTree = "<group>";
+		};
+		EF783EFA2008763600454EB6 /* DZMRMSettingView */ = {
+			isa = PBXGroup;
+			children = (
+				EF783EFB2008763600454EB6 /* DZMRMColorView.swift */,
+				EF783EFC2008763600454EB6 /* DZMRMSettingView.swift */,
+				EF783EFD2008763600454EB6 /* DZMRMFuncView.swift */,
+			);
+			path = DZMRMSettingView;
+			sourceTree = "<group>";
+		};
+		EF783F052008763600454EB6 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				EF783F062008763600454EB6 /* DZMReadRecordModel.swift */,
+				EF783F072008763600454EB6 /* DZMReadModel.swift */,
+				EF783F082008763600454EB6 /* DZMReadChapterListModel.swift */,
+				EF783F092008763600454EB6 /* DZMReadMarkModel.swift */,
+				EF783F0A2008763600454EB6 /* DZMReadChapterModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		EF783F0B2008763600454EB6 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EF783F0C2008763600454EB6 /* DZMReadViewCell.swift */,
+				EF783F0D2008763600454EB6 /* DZMCursorView.swift */,
+				EF783F0E2008763600454EB6 /* DZMReadView.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -542,7 +935,7 @@
 				TargetAttributes = {
 					2A6FC3AA1D2DF1430006CBE2 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = VJFFGYMZJ9;
+						DevelopmentTeam = Z9Q5DTACHN;
 					};
 				};
 			};
@@ -606,9 +999,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PHPackAge/Pods-PHPackAge-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -638,48 +1035,105 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AB68FAF1D5C3CE100C98438 /* SuperViewController.m in Sources */,
+				EF783F342008763600454EB6 /* DZMReadModel.swift in Sources */,
+				EF035BC6200C7C9F0071EED4 /* DemoTableViewCell.m in Sources */,
 				2A40CB671D5AB2BB00BF7A80 /* UIImage+Helper.m in Sources */,
+				EF783F2B2008763600454EB6 /* DZMRMFuncView.swift in Sources */,
+				EF783F3D200883AD00454EB6 /* ReaViewController.swift in Sources */,
+				EF34273F1FE64CA900F80440 /* PHRishEditViewController.m in Sources */,
 				0AB666BE1F24360B00329AE1 /* PHCommentStarView.m in Sources */,
+				EF3427421FE64CD600F80440 /* PHRishEditView.m in Sources */,
+				EF783F372008763600454EB6 /* DZMReadChapterModel.swift in Sources */,
 				2A6FC3D51D2DF1950006CBE2 /* ViewController.m in Sources */,
+				EF783F2A2008763600454EB6 /* DZMRMSettingView.swift in Sources */,
+				EF3427481FE6518D00F80440 /* PHRishEditTextCellView.m in Sources */,
 				0AB666BA1F24360B00329AE1 /* HSSessionModel.m in Sources */,
+				EF783F282008763600454EB6 /* DZMReadBGController.swift in Sources */,
 				2A4374F21D61AEAF00E02202 /* MASCompositeConstraint.m in Sources */,
 				0AB666B81F24360B00329AE1 /* UIViewAdditions.m in Sources */,
 				0AB666B61F24360B00329AE1 /* UILabel+Helper.m in Sources */,
 				2A6FC3B31D2DF1430006CBE2 /* AppDelegate.m in Sources */,
+				EF783F152008763600454EB6 /* DZMSegmentedControl.swift in Sources */,
+				EF783F182008763600454EB6 /* DZMGlobalMethod.swift in Sources */,
+				EF783F362008763600454EB6 /* DZMReadMarkModel.swift in Sources */,
 				0AB666C11F24360B00329AE1 /* PHPopBox.m in Sources */,
+				EF6EBFE41FFCAF8D00814891 /* DemoViewController.m in Sources */,
 				2A0CDBDB1D6EC9AD0012D04A /* PHCalendar.m in Sources */,
+				EF783F2E2008763600454EB6 /* DZMRMLeftView.swift in Sources */,
+				EF783F0F2008763600454EB6 /* NSObject+Extension.swift in Sources */,
+				EF783F1B2008763600454EB6 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				EF035BD5200CD1740071EED4 /* PHCellHeight.m in Sources */,
+				EF783F2C2008763600454EB6 /* DZMRMBottomView.swift in Sources */,
 				2A717B3D1D6AA6C100D83A4E /* CustomWebView.m in Sources */,
 				0AB666BC1F24360B00329AE1 /* ImageCutTool.m in Sources */,
 				0AB666BD1F24360B00329AE1 /* PHButton.m in Sources */,
+				EF783F1F2008763600454EB6 /* DZMMagnifierView.m in Sources */,
 				2A4374F71D61AEAF00E02202 /* MASViewConstraint.m in Sources */,
+				EF34274B1FE651A600F80440 /* PHRishEditImgCellView.m in Sources */,
 				2A0CDBDD1D6EC9AD0012D04A /* PHCalendarItem.m in Sources */,
+				EF783F162008763600454EB6 /* DZMHaloButton.swift in Sources */,
+				EF783F1A2008763600454EB6 /* DZMCoverController.m in Sources */,
+				EF783F112008763600454EB6 /* String+Extension.swift in Sources */,
+				EF783F392008763600454EB6 /* DZMCursorView.swift in Sources */,
+				EF783F222008763600454EB6 /* DZMReadOperation.swift in Sources */,
 				0AB666B41F24360B00329AE1 /* UIButton+Helper.m in Sources */,
+				EF0893F01FE67D4D00BFB882 /* PHRishEditModel.m in Sources */,
 				0AB666B91F24360B00329AE1 /* HSDownloadManager.m in Sources */,
 				0AB666B71F24360B00329AE1 /* UIView+Helper.m in Sources */,
 				2A6FC3CF1D2DF16E0006CBE2 /* UIViewAdditions.m in Sources */,
+				EF055EA11FFE204E0095936D /* PHRishShowWebView.m in Sources */,
 				2A4374FA1D61AEAF00E02202 /* View+MASAdditions.m in Sources */,
 				2A4374F91D61AEAF00E02202 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				EF783F232008763600454EB6 /* DZMReadParser.swift in Sources */,
 				2A4374F51D61AEAF00E02202 /* MASLayoutConstraint.m in Sources */,
+				EF783F262008763600454EB6 /* DZMReadAuxiliary.swift in Sources */,
 				2A4374FB1D61AEAF00E02202 /* ViewController+MASAdditions.m in Sources */,
+				EF783F272008763600454EB6 /* DZMReadController.swift in Sources */,
 				2A4374F41D61AEAF00E02202 /* MASConstraintMaker.m in Sources */,
 				0AB666C01F24360B00329AE1 /* PHDownLoader.m in Sources */,
+				EF5D14B21FE3D368003592B2 /* PHBaseViewController.m in Sources */,
 				0AB666C41F24360B00329AE1 /* YanButton.m in Sources */,
 				2A0CDBDC1D6EC9AD0012D04A /* PHCalendarContentVC.m in Sources */,
+				EF783F1E2008763600454EB6 /* UIView+YGPulseView.m in Sources */,
+				EF783F2D2008763600454EB6 /* DZMRMStatusView.swift in Sources */,
+				EF0893ED1FE6717400BFB882 /* PHImagePickerController.m in Sources */,
 				2A6FC3CD1D2DF16E0006CBE2 /* PHCellView.m in Sources */,
 				0AB666C31F24360B00329AE1 /* PHTabbar.m in Sources */,
+				EF783F292008763600454EB6 /* DZMRMColorView.swift in Sources */,
+				EF783F122008763600454EB6 /* UIScrollView+Extension.swift in Sources */,
 				0AB666AF1F24360B00329AE1 /* PHPush.m in Sources */,
 				0AB666B21F24360B00329AE1 /* LaunchAdView.m in Sources */,
+				EF783F1C2008763600454EB6 /* ASValuePopUpView.m in Sources */,
 				2A6FC3B01D2DF1430006CBE2 /* main.m in Sources */,
+				EF783F252008763600454EB6 /* DZMReadConfigure.swift in Sources */,
 				0AB666B31F24360B00329AE1 /* NSString+Helper.m in Sources */,
+				EF783F352008763600454EB6 /* DZMReadChapterListModel.swift in Sources */,
+				EF783F242008763600454EB6 /* DZMReadViewController.swift in Sources */,
+				EF783F3A2008763600454EB6 /* DZMReadView.swift in Sources */,
 				0AB666BF1F24360B00329AE1 /* PHCustomTabbarController.m in Sources */,
+				EF783F142008763600454EB6 /* UITableView+Extension.swift in Sources */,
+				EF783F302008763600454EB6 /* DZMRMTopView.swift in Sources */,
+				EF783F202008763600454EB6 /* DZMBatteryView.swift in Sources */,
 				0AB666B51F24360B00329AE1 /* UIImage+Helper.m in Sources */,
 				0AB666C21F24360B00329AE1 /* PHSocketManager.m in Sources */,
+				EF783F1D2008763600454EB6 /* ASValueTrackingSlider.m in Sources */,
+				EF783F212008763600454EB6 /* DZMViewController.swift in Sources */,
+				EF783F132008763600454EB6 /* UIPageViewController+Extension.swift in Sources */,
 				0AB666BB1F24360B00329AE1 /* NSString+Hash.m in Sources */,
 				2A54E44C1D5D7828008CA6D2 /* PHPrinter.m in Sources */,
+				EF783F382008763600454EB6 /* DZMReadViewCell.swift in Sources */,
+				EF783F332008763600454EB6 /* DZMReadRecordModel.swift in Sources */,
 				2A4374F81D61AEAF00E02202 /* NSArray+MASAdditions.m in Sources */,
+				EF783F102008763600454EB6 /* UIView+Extension.swift in Sources */,
+				EF783F192008763600454EB6 /* DZMGlobalProperty.swift in Sources */,
 				2A4374F61D61AEAF00E02202 /* MASViewAttribute.m in Sources */,
+				EF783F322008763600454EB6 /* DZMRMLightView.swift in Sources */,
+				EF783F2F2008763600454EB6 /* DZMReadMenu.swift in Sources */,
+				EF783F172008763600454EB6 /* DZMUserDefaults.swift in Sources */,
 				0AB666B01F24360B00329AE1 /* RunTimeHelper.m in Sources */,
 				0AB666B11F24360B00329AE1 /* LatexView.m in Sources */,
+				EF783F312008763600454EB6 /* DZMRMBaseView.swift in Sources */,
+				EF3427451FE64CEC00F80440 /* PHRishEditCellView.m in Sources */,
 				2A4374F31D61AEAF00E02202 /* MASConstraint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -793,11 +1247,14 @@
 			baseConfigurationReference = 3871CAFF40709CC18DB91D79 /* Pods-PHPackAge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VJFFGYMZJ9;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z9Q5DTACHN;
 				INFOPLIST_FILE = PHPackAge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wdx.PHPackAge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ph/Desktop/ph/packAge/PHPackAge/PHPackage-Bridging.h";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -806,11 +1263,14 @@
 			baseConfigurationReference = 96D417F52CC9ABAF58199255 /* Pods-PHPackAge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VJFFGYMZJ9;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z9Q5DTACHN;
 				INFOPLIST_FILE = PHPackAge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wdx.PHPackAge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ph/Desktop/ph/packAge/PHPackAge/PHPackage-Bridging.h";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

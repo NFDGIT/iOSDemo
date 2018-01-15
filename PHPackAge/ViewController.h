@@ -7,8 +7,9 @@
 //
 
 #import "SuperViewController.h"
+#import "PHBaseViewController.h"
 
-@interface ViewController : SuperViewController
+@interface ViewController : PHBaseViewController
 
 
 @end

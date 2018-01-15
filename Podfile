@@ -6,5 +6,7 @@ target 'PHPackAge' do
   # use_frameworks!
 
   # Pods for PHPackAge
-
+   pod 'IQKeyboardManager', '~> 5.0.6'
+  pod 'SDWebImage', '~> 4.2.2'
+  pod 'MJRefresh', '~> 3.1.15.1'
 end
