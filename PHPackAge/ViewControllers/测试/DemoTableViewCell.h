@@ -15,4 +15,6 @@
 
 @property (nonatomic,strong)CGFloat(^heightBlock)(UITableView * tableView);
 @property (nonatomic,strong)NSString * title;
+
+@property (nonatomic,strong)void (^loadImgFinish)();
 @end

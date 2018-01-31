@@ -9,4 +9,5 @@ target 'PHPackAge' do
    pod 'IQKeyboardManager', '~> 5.0.6'
   pod 'SDWebImage', '~> 4.2.2'
   pod 'MJRefresh', '~> 3.1.15.1'
+ pod 'Masonry', '~> 1.1.0'
 end

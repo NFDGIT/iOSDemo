@@ -106,6 +106,14 @@
 		EF783F392008763600454EB6 /* DZMCursorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783F0D2008763600454EB6 /* DZMCursorView.swift */; };
 		EF783F3A2008763600454EB6 /* DZMReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783F0E2008763600454EB6 /* DZMReadView.swift */; };
 		EF783F3D200883AD00454EB6 /* ReaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783F3C200883AD00454EB6 /* ReaViewController.swift */; };
+		EF8F4CE82019A1560064CF4A /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8F4CE72019A1560064CF4A /* base64.m */; };
+		EFB6C5252021AEFC00039D62 /* PHSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB6C5232021AEFB00039D62 /* PHSegmentViewController.m */; };
+		EFB6C5292021AFBB00039D62 /* SegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB6C5282021AFBB00039D62 /* SegViewController.m */; };
+		EFB6C52D2021B39B00039D62 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB6C52C2021B39B00039D62 /* TabBarController.m */; };
+		EFB6C5302021B3E900039D62 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB6C52F2021B3E900039D62 /* NavigationController.m */; };
+		EFB6C5382021B7FB00039D62 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB6C5372021B7FB00039D62 /* InfoViewController.m */; };
+		EFB6C53B2021BED200039D62 /* PublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB6C53A2021BED200039D62 /* PublishViewController.m */; };
+		EFB6C53E2021BEE100039D62 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB6C53D2021BEE100039D62 /* OtherViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -266,6 +274,23 @@
 		EF783F0E2008763600454EB6 /* DZMReadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMReadView.swift; sourceTree = "<group>"; };
 		EF783F3B2008798000454EB6 /* PHPackage-Bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHPackage-Bridging.h"; sourceTree = "<group>"; };
 		EF783F3C200883AD00454EB6 /* ReaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaViewController.swift; sourceTree = "<group>"; };
+		EF8F4CE62019A1550064CF4A /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		EF8F4CE72019A1560064CF4A /* base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = base64.m; sourceTree = "<group>"; };
+		EFB6C5232021AEFB00039D62 /* PHSegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHSegmentViewController.m; sourceTree = "<group>"; };
+		EFB6C5242021AEFB00039D62 /* PHSegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHSegmentViewController.h; sourceTree = "<group>"; };
+		EFB6C5262021AF2800039D62 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EFB6C5272021AFBB00039D62 /* SegViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegViewController.h; sourceTree = "<group>"; };
+		EFB6C5282021AFBB00039D62 /* SegViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegViewController.m; sourceTree = "<group>"; };
+		EFB6C52B2021B39B00039D62 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		EFB6C52C2021B39B00039D62 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		EFB6C52E2021B3E900039D62 /* NavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		EFB6C52F2021B3E900039D62 /* NavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		EFB6C5362021B7FB00039D62 /* InfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		EFB6C5372021B7FB00039D62 /* InfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		EFB6C5392021BED200039D62 /* PublishViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublishViewController.h; sourceTree = "<group>"; };
+		EFB6C53A2021BED200039D62 /* PublishViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublishViewController.m; sourceTree = "<group>"; };
+		EFB6C53C2021BEE100039D62 /* OtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
+		EFB6C53D2021BEE100039D62 /* OtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -435,6 +460,8 @@
 		2A0CDBD01D6EC9AD0012D04A /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				0AB666A91F24360B00329AE1 /* PHTabbar */,
+				EFB6C5202021AE9100039D62 /* PHSegment */,
 				EF0893EA1FE6713300BFB882 /* PHImagePickerController */,
 				0AB666741F24360B00329AE1 /* PHPush */,
 				0AB666771F24360B00329AE1 /* RunTimeHelper */,
@@ -450,7 +477,6 @@
 				0AB666A21F24360B00329AE1 /* PHDownLoader.m */,
 				0AB666A31F24360B00329AE1 /* PHPopBox */,
 				0AB666A61F24360B00329AE1 /* PHSocketManager */,
-				0AB666A91F24360B00329AE1 /* PHTabbar */,
 				0AB666AC1F24360B00329AE1 /* PHYanBtn */,
 				2A0CDBD11D6EC9AD0012D04A /* PHCalendar */,
 			);
@@ -510,19 +536,10 @@
 		2A6FC3AD1D2DF1430006CBE2 /* PHPackAge */ = {
 			isa = PBXGroup;
 			children = (
+				EFB6C5312021B41400039D62 /* iPhone */,
+				EFB6C52A2021B26C00039D62 /* Main */,
 				EF5D14B31FE3D785003592B2 /* ViewControllers */,
-				2A45CA511D62A91500F7D9DA /* HTML */,
-				2A6FC3C51D2DF16E0006CBE2 /* PH */,
-				2A6FC3B11D2DF1430006CBE2 /* AppDelegate.h */,
-				2A6FC3B21D2DF1430006CBE2 /* AppDelegate.m */,
-				2A6FC3D31D2DF1950006CBE2 /* ViewController.h */,
-				2A6FC3D41D2DF1950006CBE2 /* ViewController.m */,
-				EF783F3B2008798000454EB6 /* PHPackage-Bridging.h */,
-				2A6FC3B71D2DF1430006CBE2 /* Main.storyboard */,
-				2A6FC3BA1D2DF1430006CBE2 /* Assets.xcassets */,
-				2A6FC3BC1D2DF1430006CBE2 /* LaunchScreen.storyboard */,
-				2A6FC3BF1D2DF1430006CBE2 /* Info.plist */,
-				2A6FC3AE1D2DF1430006CBE2 /* Supporting Files */,
+				2A6FC3C51D2DF16E0006CBE2 /* Tools */,
 			);
 			path = PHPackAge;
 			sourceTree = "<group>";
@@ -533,11 +550,15 @@
 				2A6FC3AF1D2DF1430006CBE2 /* main.m */,
 			);
 			name = "Supporting Files";
+			path = ..;
 			sourceTree = "<group>";
 		};
-		2A6FC3C51D2DF16E0006CBE2 /* PH */ = {
+		2A6FC3C51D2DF16E0006CBE2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				2A45CA511D62A91500F7D9DA /* HTML */,
+				EF8F4CE62019A1550064CF4A /* base64.h */,
+				EF8F4CE72019A1560064CF4A /* base64.m */,
 				EF783ECA2008763600454EB6 /* EReader */,
 				EF5D14AF1FE3D342003592B2 /* Base */,
 				2A0CDBD01D6EC9AD0012D04A /* Tool */,
@@ -554,7 +575,7 @@
 				2A6FC3CB1D2DF16E0006CBE2 /* UIViewAdditions.h */,
 				2A6FC3CC1D2DF16E0006CBE2 /* UIViewAdditions.m */,
 			);
-			path = PH;
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		4A6ECDCE59DBFC14CCDA6AFE /* Pods */ = {
@@ -595,6 +616,8 @@
 		EF5D14B31FE3D785003592B2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				EFB6C5222021AED200039D62 /* segment */,
+				EFB6C5212021AEC300039D62 /* 日历 */,
 				EF6EBFE11FFCAF6900814891 /* 测试 */,
 				EF5D14B41FE3D79E003592B2 /* 富文本编辑器 */,
 				EF783F3C200883AD00454EB6 /* ReaViewController.swift */,
@@ -827,6 +850,98 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		EFB6C5202021AE9100039D62 /* PHSegment */ = {
+			isa = PBXGroup;
+			children = (
+				EFB6C5242021AEFB00039D62 /* PHSegmentViewController.h */,
+				EFB6C5232021AEFB00039D62 /* PHSegmentViewController.m */,
+			);
+			path = PHSegment;
+			sourceTree = "<group>";
+		};
+		EFB6C5212021AEC300039D62 /* 日历 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "日历";
+			sourceTree = "<group>";
+		};
+		EFB6C5222021AED200039D62 /* segment */ = {
+			isa = PBXGroup;
+			children = (
+				EFB6C5272021AFBB00039D62 /* SegViewController.h */,
+				EFB6C5282021AFBB00039D62 /* SegViewController.m */,
+			);
+			path = segment;
+			sourceTree = "<group>";
+		};
+		EFB6C52A2021B26C00039D62 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2A6FC3AE1D2DF1430006CBE2 /* Supporting Files */,
+				2A6FC3B11D2DF1430006CBE2 /* AppDelegate.h */,
+				2A6FC3B21D2DF1430006CBE2 /* AppDelegate.m */,
+				2A6FC3D31D2DF1950006CBE2 /* ViewController.h */,
+				2A6FC3D41D2DF1950006CBE2 /* ViewController.m */,
+				EFB6C52B2021B39B00039D62 /* TabBarController.h */,
+				EFB6C52C2021B39B00039D62 /* TabBarController.m */,
+				EFB6C52E2021B3E900039D62 /* NavigationController.h */,
+				EFB6C52F2021B3E900039D62 /* NavigationController.m */,
+				EF783F3B2008798000454EB6 /* PHPackage-Bridging.h */,
+				2A6FC3B71D2DF1430006CBE2 /* Main.storyboard */,
+				2A6FC3BA1D2DF1430006CBE2 /* Assets.xcassets */,
+				2A6FC3BC1D2DF1430006CBE2 /* LaunchScreen.storyboard */,
+				2A6FC3BF1D2DF1430006CBE2 /* Info.plist */,
+				EFB6C5262021AF2800039D62 /* PrefixHeader.pch */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EFB6C5312021B41400039D62 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				EFB6C5332021B4EA00039D62 /* Publish */,
+				EFB6C5322021B42C00039D62 /* 资讯 */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		EFB6C5322021B42C00039D62 /* 资讯 */ = {
+			isa = PBXGroup;
+			children = (
+				EFB6C5352021B5AD00039D62 /* controllers */,
+			);
+			path = "资讯";
+			sourceTree = "<group>";
+		};
+		EFB6C5332021B4EA00039D62 /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+				EFB6C5342021B59000039D62 /* controllers */,
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
+		EFB6C5342021B59000039D62 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EFB6C5392021BED200039D62 /* PublishViewController.h */,
+				EFB6C53A2021BED200039D62 /* PublishViewController.m */,
+				EFB6C53C2021BEE100039D62 /* OtherViewController.h */,
+				EFB6C53D2021BEE100039D62 /* OtherViewController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		EFB6C5352021B5AD00039D62 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EFB6C5362021B7FB00039D62 /* InfoViewController.h */,
+				EFB6C5372021B7FB00039D62 /* InfoViewController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1006,10 +1121,13 @@
 				0AB666B71F24360B00329AE1 /* UIView+Helper.m in Sources */,
 				2A6FC3CF1D2DF16E0006CBE2 /* UIViewAdditions.m in Sources */,
 				EF055EA11FFE204E0095936D /* PHRishShowWebView.m in Sources */,
+				EFB6C5292021AFBB00039D62 /* SegViewController.m in Sources */,
 				EF783F232008763600454EB6 /* DZMReadParser.swift in Sources */,
 				EF783F262008763600454EB6 /* DZMReadAuxiliary.swift in Sources */,
 				EF783F272008763600454EB6 /* DZMReadController.swift in Sources */,
+				EFB6C5302021B3E900039D62 /* NavigationController.m in Sources */,
 				0AB666C01F24360B00329AE1 /* PHDownLoader.m in Sources */,
+				EFB6C53B2021BED200039D62 /* PublishViewController.m in Sources */,
 				EF5D14B21FE3D368003592B2 /* PHBaseViewController.m in Sources */,
 				0AB666C41F24360B00329AE1 /* YanButton.m in Sources */,
 				2A0CDBDC1D6EC9AD0012D04A /* PHCalendarContentVC.m in Sources */,
@@ -1025,21 +1143,25 @@
 				EF783F1C2008763600454EB6 /* ASValuePopUpView.m in Sources */,
 				2A6FC3B01D2DF1430006CBE2 /* main.m in Sources */,
 				EF783F252008763600454EB6 /* DZMReadConfigure.swift in Sources */,
+				EFB6C5382021B7FB00039D62 /* InfoViewController.m in Sources */,
 				0AB666B31F24360B00329AE1 /* NSString+Helper.m in Sources */,
 				EF783F352008763600454EB6 /* DZMReadChapterListModel.swift in Sources */,
 				EF783F242008763600454EB6 /* DZMReadViewController.swift in Sources */,
 				EF783F3A2008763600454EB6 /* DZMReadView.swift in Sources */,
+				EFB6C5252021AEFC00039D62 /* PHSegmentViewController.m in Sources */,
 				0AB666BF1F24360B00329AE1 /* PHCustomTabbarController.m in Sources */,
 				EF783F142008763600454EB6 /* UITableView+Extension.swift in Sources */,
 				EF783F302008763600454EB6 /* DZMRMTopView.swift in Sources */,
 				EF783F202008763600454EB6 /* DZMBatteryView.swift in Sources */,
 				0AB666B51F24360B00329AE1 /* UIImage+Helper.m in Sources */,
 				0AB666C21F24360B00329AE1 /* PHSocketManager.m in Sources */,
+				EFB6C53E2021BEE100039D62 /* OtherViewController.m in Sources */,
 				EF783F1D2008763600454EB6 /* ASValueTrackingSlider.m in Sources */,
 				EF783F212008763600454EB6 /* DZMViewController.swift in Sources */,
 				EF783F132008763600454EB6 /* UIPageViewController+Extension.swift in Sources */,
 				0AB666BB1F24360B00329AE1 /* NSString+Hash.m in Sources */,
 				2A54E44C1D5D7828008CA6D2 /* PHPrinter.m in Sources */,
+				EF8F4CE82019A1560064CF4A /* base64.m in Sources */,
 				EF783F382008763600454EB6 /* DZMReadViewCell.swift in Sources */,
 				EF783F332008763600454EB6 /* DZMReadRecordModel.swift in Sources */,
 				EF783F102008763600454EB6 /* UIView+Extension.swift in Sources */,
@@ -1049,6 +1171,7 @@
 				EF783F172008763600454EB6 /* DZMUserDefaults.swift in Sources */,
 				0AB666B01F24360B00329AE1 /* RunTimeHelper.m in Sources */,
 				0AB666B11F24360B00329AE1 /* LatexView.m in Sources */,
+				EFB6C52D2021B39B00039D62 /* TabBarController.m in Sources */,
 				EF783F312008763600454EB6 /* DZMRMBaseView.swift in Sources */,
 				EF3427451FE64CEC00F80440 /* PHRishEditCellView.m in Sources */,
 			);
@@ -1165,11 +1288,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Z9Q5DTACHN;
-				INFOPLIST_FILE = PHPackAge/Info.plist;
+				GCC_PREFIX_HEADER = PHPackAge/Main/PrefixHeader.pch;
+				INFOPLIST_FILE = PHPackAge/Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wdx.PHPackAge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ph/Desktop/ph/packAge/PHPackAge/PHPackage-Bridging.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ph/Desktop/ph/packAge/PHPackAge/Main/PHPackage-Bridging.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -1181,11 +1305,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Z9Q5DTACHN;
-				INFOPLIST_FILE = PHPackAge/Info.plist;
+				GCC_PREFIX_HEADER = PHPackAge/Main/PrefixHeader.pch;
+				INFOPLIST_FILE = PHPackAge/Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wdx.PHPackAge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ph/Desktop/ph/packAge/PHPackAge/PHPackage-Bridging.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ph/Desktop/ph/packAge/PHPackAge/Main/PHPackage-Bridging.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

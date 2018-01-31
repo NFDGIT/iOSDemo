@@ -8,11 +8,12 @@
 
 #import "DemoTableViewCell.h"
 #import "UIViewAdditions.h"
-
+#import <UIImageView+WebCache.h>
 
 
 @interface DemoTableViewCell()
 @property (nonatomic,strong)UILabel * label;
+@property (nonatomic,strong)UIImageView * imgView;
 @end
 @implementation DemoTableViewCell
 
@@ -33,6 +34,9 @@
     _label.backgroundColor  =[UIColor redColor];
     
     
+    _imgView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 200, 20)];
+    [self.contentView addSubview:_imgView];
+    
     self.contentView.height = 200;
 
 }
@@ -41,7 +45,22 @@
     _label.text = title;
     [_label sizeToFit];
     
-
+    _imgView.top = _label.bottom;
+//    [_imgView ]
+    [_imgView sd_setImageWithURL:[NSURL URLWithString:@"http://img15.3lian.com/2015/a1/03/d/163.jpg"] placeholderImage:[UIImage imageNamed:@""] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+        
+        _imgView.height = _imgView.width *  (image.size.height / image.size.width);
+        self.ph_Height = _imgView.bottom;
+        
+        
+        
+        NSLog(@"%f,%f",self.ph_Height,_imgView.bottom);
+        if (self.loadImgFinish && self.ph_Height != _imgView.bottom) {
+            self.loadImgFinish();
+        }
+    }];
+    
+    
     self.ph_Height = _label.bottom;
 }
 
