@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UIButton (Helper)
-
+-(void)addEvents:(UIControlEvents)event block:(void(^)(UIButton * target))block;
 @end

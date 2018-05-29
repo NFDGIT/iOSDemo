@@ -12,7 +12,6 @@
 		0AB666B11F24360B00329AE1 /* LatexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB6667C1F24360B00329AE1 /* LatexView.m */; };
 		0AB666B21F24360B00329AE1 /* LaunchAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB6667F1F24360B00329AE1 /* LaunchAdView.m */; };
 		0AB666B31F24360B00329AE1 /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB666821F24360B00329AE1 /* NSString+Helper.m */; };
-		0AB666B41F24360B00329AE1 /* UIButton+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB666841F24360B00329AE1 /* UIButton+Helper.m */; };
 		0AB666B51F24360B00329AE1 /* UIImage+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB666861F24360B00329AE1 /* UIImage+Helper.m */; };
 		0AB666B61F24360B00329AE1 /* UILabel+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB666881F24360B00329AE1 /* UILabel+Helper.m */; };
 		0AB666B71F24360B00329AE1 /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB6668A1F24360B00329AE1 /* UIView+Helper.m */; };
@@ -27,7 +26,6 @@
 		0AB666C01F24360B00329AE1 /* PHDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB666A21F24360B00329AE1 /* PHDownLoader.m */; };
 		0AB666C11F24360B00329AE1 /* PHPopBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB666A51F24360B00329AE1 /* PHPopBox.m */; };
 		0AB666C21F24360B00329AE1 /* PHSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB666A81F24360B00329AE1 /* PHSocketManager.m */; };
-		0AB666C31F24360B00329AE1 /* PHTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB666AB1F24360B00329AE1 /* PHTabbar.m */; };
 		0AB666C41F24360B00329AE1 /* YanButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB666AE1F24360B00329AE1 /* YanButton.m */; };
 		2A0CDBDB1D6EC9AD0012D04A /* PHCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0CDBD31D6EC9AD0012D04A /* PHCalendar.m */; };
 		2A0CDBDC1D6EC9AD0012D04A /* PHCalendarContentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0CDBD51D6EC9AD0012D04A /* PHCalendarContentVC.m */; };
@@ -107,13 +105,18 @@
 		EF783F3A2008763600454EB6 /* DZMReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783F0E2008763600454EB6 /* DZMReadView.swift */; };
 		EF783F3D200883AD00454EB6 /* ReaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783F3C200883AD00454EB6 /* ReaViewController.swift */; };
 		EF8F4CE82019A1560064CF4A /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8F4CE72019A1560064CF4A /* base64.m */; };
-		EFB6C5252021AEFC00039D62 /* PHSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB6C5232021AEFB00039D62 /* PHSegmentViewController.m */; };
 		EFB6C5292021AFBB00039D62 /* SegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB6C5282021AFBB00039D62 /* SegViewController.m */; };
 		EFB6C52D2021B39B00039D62 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB6C52C2021B39B00039D62 /* TabBarController.m */; };
 		EFB6C5302021B3E900039D62 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB6C52F2021B3E900039D62 /* NavigationController.m */; };
 		EFB6C5382021B7FB00039D62 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB6C5372021B7FB00039D62 /* InfoViewController.m */; };
-		EFB6C53B2021BED200039D62 /* PublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB6C53A2021BED200039D62 /* PublishViewController.m */; };
-		EFB6C53E2021BEE100039D62 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB6C53D2021BEE100039D62 /* OtherViewController.m */; };
+		EFD0D45F20BD55AE002BBEFB /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D45D20BD55AE002BBEFB /* HomePageViewController.m */; };
+		EFD0D46320BD55EA002BBEFB /* H5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D46220BD55EA002BBEFB /* H5ViewController.swift */; };
+		EFD0D46720BD56B2002BBEFB /* PHCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D46620BD56B2002BBEFB /* PHCarouselView.m */; };
+		EFD0D46A20BD5707002BBEFB /* PHSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D46820BD5707002BBEFB /* PHSegmentViewController.m */; };
+		EFD0D46D20BD573B002BBEFB /* PHTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D46B20BD573B002BBEFB /* PHTabbarView.m */; };
+		EFD0D47020BD5795002BBEFB /* FirstTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D46E20BD5794002BBEFB /* FirstTableViewController.m */; };
+		EFD0D47320BD580A002BBEFB /* UIButton+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D47120BD5809002BBEFB /* UIButton+Helper.m */; };
+		EFD0D47720BD58D3002BBEFB /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D47620BD58D3002BBEFB /* MainTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,8 +130,6 @@
 		0AB6667F1F24360B00329AE1 /* LaunchAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAdView.m; sourceTree = "<group>"; };
 		0AB666811F24360B00329AE1 /* NSString+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Helper.h"; sourceTree = "<group>"; };
 		0AB666821F24360B00329AE1 /* NSString+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Helper.m"; sourceTree = "<group>"; };
-		0AB666831F24360B00329AE1 /* UIButton+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Helper.h"; sourceTree = "<group>"; };
-		0AB666841F24360B00329AE1 /* UIButton+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Helper.m"; sourceTree = "<group>"; };
 		0AB666851F24360B00329AE1 /* UIImage+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Helper.h"; sourceTree = "<group>"; };
 		0AB666861F24360B00329AE1 /* UIImage+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Helper.m"; sourceTree = "<group>"; };
 		0AB666871F24360B00329AE1 /* UILabel+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Helper.h"; sourceTree = "<group>"; };
@@ -157,8 +158,6 @@
 		0AB666A51F24360B00329AE1 /* PHPopBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHPopBox.m; sourceTree = "<group>"; };
 		0AB666A71F24360B00329AE1 /* PHSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHSocketManager.h; sourceTree = "<group>"; };
 		0AB666A81F24360B00329AE1 /* PHSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHSocketManager.m; sourceTree = "<group>"; };
-		0AB666AA1F24360B00329AE1 /* PHTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHTabbar.h; sourceTree = "<group>"; };
-		0AB666AB1F24360B00329AE1 /* PHTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHTabbar.m; sourceTree = "<group>"; };
 		0AB666AD1F24360B00329AE1 /* YanButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YanButton.h; sourceTree = "<group>"; };
 		0AB666AE1F24360B00329AE1 /* YanButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YanButton.m; sourceTree = "<group>"; };
 		2658EE9FD4E434EBCF6D2150 /* libPods-PHPackAge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PHPackAge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -276,8 +275,6 @@
 		EF783F3C200883AD00454EB6 /* ReaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaViewController.swift; sourceTree = "<group>"; };
 		EF8F4CE62019A1550064CF4A /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
 		EF8F4CE72019A1560064CF4A /* base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = base64.m; sourceTree = "<group>"; };
-		EFB6C5232021AEFB00039D62 /* PHSegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHSegmentViewController.m; sourceTree = "<group>"; };
-		EFB6C5242021AEFB00039D62 /* PHSegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHSegmentViewController.h; sourceTree = "<group>"; };
 		EFB6C5262021AF2800039D62 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		EFB6C5272021AFBB00039D62 /* SegViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegViewController.h; sourceTree = "<group>"; };
 		EFB6C5282021AFBB00039D62 /* SegViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegViewController.m; sourceTree = "<group>"; };
@@ -287,10 +284,21 @@
 		EFB6C52F2021B3E900039D62 /* NavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		EFB6C5362021B7FB00039D62 /* InfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		EFB6C5372021B7FB00039D62 /* InfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
-		EFB6C5392021BED200039D62 /* PublishViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublishViewController.h; sourceTree = "<group>"; };
-		EFB6C53A2021BED200039D62 /* PublishViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublishViewController.m; sourceTree = "<group>"; };
-		EFB6C53C2021BEE100039D62 /* OtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
-		EFB6C53D2021BEE100039D62 /* OtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
+		EFD0D45D20BD55AE002BBEFB /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		EFD0D45E20BD55AE002BBEFB /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		EFD0D46220BD55EA002BBEFB /* H5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = H5ViewController.swift; path = ../../../../../../../Documents/H5ViewController.swift; sourceTree = "<group>"; };
+		EFD0D46520BD56B2002BBEFB /* PHCarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHCarouselView.h; sourceTree = "<group>"; };
+		EFD0D46620BD56B2002BBEFB /* PHCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHCarouselView.m; sourceTree = "<group>"; };
+		EFD0D46820BD5707002BBEFB /* PHSegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHSegmentViewController.m; sourceTree = "<group>"; };
+		EFD0D46920BD5707002BBEFB /* PHSegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHSegmentViewController.h; sourceTree = "<group>"; };
+		EFD0D46B20BD573B002BBEFB /* PHTabbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHTabbarView.m; sourceTree = "<group>"; };
+		EFD0D46C20BD573B002BBEFB /* PHTabbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHTabbarView.h; sourceTree = "<group>"; };
+		EFD0D46E20BD5794002BBEFB /* FirstTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTableViewController.m; sourceTree = "<group>"; };
+		EFD0D46F20BD5795002BBEFB /* FirstTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTableViewController.h; sourceTree = "<group>"; };
+		EFD0D47120BD5809002BBEFB /* UIButton+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Helper.m"; sourceTree = "<group>"; };
+		EFD0D47220BD5809002BBEFB /* UIButton+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Helper.h"; sourceTree = "<group>"; };
+		EFD0D47520BD58D3002BBEFB /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
+		EFD0D47620BD58D3002BBEFB /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,14 +352,14 @@
 		0AB666801F24360B00329AE1 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				EFD0D47220BD5809002BBEFB /* UIButton+Helper.h */,
+				EFD0D47120BD5809002BBEFB /* UIButton+Helper.m */,
 				EF035BD6200CD3860071EED4 /* UITextField+MaxLimit.h */,
 				EF035BD7200CD3860071EED4 /* UITextField+MaxLimit.m */,
 				EF035BD4200CD1730071EED4 /* PHCellHeight.h */,
 				EF035BD3200CD1730071EED4 /* PHCellHeight.m */,
 				0AB666811F24360B00329AE1 /* NSString+Helper.h */,
 				0AB666821F24360B00329AE1 /* NSString+Helper.m */,
-				0AB666831F24360B00329AE1 /* UIButton+Helper.h */,
-				0AB666841F24360B00329AE1 /* UIButton+Helper.m */,
 				0AB666851F24360B00329AE1 /* UIImage+Helper.h */,
 				0AB666861F24360B00329AE1 /* UIImage+Helper.m */,
 				0AB666871F24360B00329AE1 /* UILabel+Helper.h */,
@@ -442,8 +450,8 @@
 		0AB666A91F24360B00329AE1 /* PHTabbar */ = {
 			isa = PBXGroup;
 			children = (
-				0AB666AA1F24360B00329AE1 /* PHTabbar.h */,
-				0AB666AB1F24360B00329AE1 /* PHTabbar.m */,
+				EFD0D46C20BD573B002BBEFB /* PHTabbarView.h */,
+				EFD0D46B20BD573B002BBEFB /* PHTabbarView.m */,
 			);
 			path = PHTabbar;
 			sourceTree = "<group>";
@@ -460,6 +468,7 @@
 		2A0CDBD01D6EC9AD0012D04A /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				EFD0D46420BD5681002BBEFB /* 轮播图 */,
 				0AB666A91F24360B00329AE1 /* PHTabbar */,
 				EFB6C5202021AE9100039D62 /* PHSegment */,
 				EF0893EA1FE6713300BFB882 /* PHImagePickerController */,
@@ -853,8 +862,8 @@
 		EFB6C5202021AE9100039D62 /* PHSegment */ = {
 			isa = PBXGroup;
 			children = (
-				EFB6C5242021AEFB00039D62 /* PHSegmentViewController.h */,
-				EFB6C5232021AEFB00039D62 /* PHSegmentViewController.m */,
+				EFD0D46920BD5707002BBEFB /* PHSegmentViewController.h */,
+				EFD0D46820BD5707002BBEFB /* PHSegmentViewController.m */,
 			);
 			path = PHSegment;
 			sourceTree = "<group>";
@@ -900,7 +909,8 @@
 		EFB6C5312021B41400039D62 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
-				EFB6C5332021B4EA00039D62 /* Publish */,
+				EFD0D46020BD55C0002BBEFB /* 网页 */,
+				EFB6C5332021B4EA00039D62 /* 首页 */,
 				EFB6C5322021B42C00039D62 /* 资讯 */,
 			);
 			path = iPhone;
@@ -914,21 +924,22 @@
 			path = "资讯";
 			sourceTree = "<group>";
 		};
-		EFB6C5332021B4EA00039D62 /* Publish */ = {
+		EFB6C5332021B4EA00039D62 /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				EFD0D47420BD58B1002BBEFB /* Views */,
 				EFB6C5342021B59000039D62 /* controllers */,
 			);
-			path = Publish;
+			path = "首页";
 			sourceTree = "<group>";
 		};
 		EFB6C5342021B59000039D62 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EFB6C5392021BED200039D62 /* PublishViewController.h */,
-				EFB6C53A2021BED200039D62 /* PublishViewController.m */,
-				EFB6C53C2021BEE100039D62 /* OtherViewController.h */,
-				EFB6C53D2021BEE100039D62 /* OtherViewController.m */,
+				EFD0D46F20BD5795002BBEFB /* FirstTableViewController.h */,
+				EFD0D46E20BD5794002BBEFB /* FirstTableViewController.m */,
+				EFD0D45E20BD55AE002BBEFB /* HomePageViewController.h */,
+				EFD0D45D20BD55AE002BBEFB /* HomePageViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -940,6 +951,40 @@
 				EFB6C5372021B7FB00039D62 /* InfoViewController.m */,
 			);
 			path = controllers;
+			sourceTree = "<group>";
+		};
+		EFD0D46020BD55C0002BBEFB /* 网页 */ = {
+			isa = PBXGroup;
+			children = (
+				EFD0D46120BD55CC002BBEFB /* Controllers */,
+			);
+			path = "网页";
+			sourceTree = "<group>";
+		};
+		EFD0D46120BD55CC002BBEFB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EFD0D46220BD55EA002BBEFB /* H5ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EFD0D46420BD5681002BBEFB /* 轮播图 */ = {
+			isa = PBXGroup;
+			children = (
+				EFD0D46520BD56B2002BBEFB /* PHCarouselView.h */,
+				EFD0D46620BD56B2002BBEFB /* PHCarouselView.m */,
+			);
+			path = "轮播图";
+			sourceTree = "<group>";
+		};
+		EFD0D47420BD58B1002BBEFB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFD0D47520BD58D3002BBEFB /* MainTableViewCell.h */,
+				EFD0D47620BD58D3002BBEFB /* MainTableViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1076,6 +1121,7 @@
 			files = (
 				2AB68FAF1D5C3CE100C98438 /* SuperViewController.m in Sources */,
 				EF783F342008763600454EB6 /* DZMReadModel.swift in Sources */,
+				EFD0D45F20BD55AE002BBEFB /* HomePageViewController.m in Sources */,
 				EF035BC6200C7C9F0071EED4 /* DemoTableViewCell.m in Sources */,
 				2A40CB671D5AB2BB00BF7A80 /* UIImage+Helper.m in Sources */,
 				EF783F2B2008763600454EB6 /* DZMRMFuncView.swift in Sources */,
@@ -1091,6 +1137,7 @@
 				0AB666BA1F24360B00329AE1 /* HSSessionModel.m in Sources */,
 				EF783F282008763600454EB6 /* DZMReadBGController.swift in Sources */,
 				0AB666B81F24360B00329AE1 /* UIViewAdditions.m in Sources */,
+				EFD0D46A20BD5707002BBEFB /* PHSegmentViewController.m in Sources */,
 				0AB666B61F24360B00329AE1 /* UILabel+Helper.m in Sources */,
 				2A6FC3B31D2DF1430006CBE2 /* AppDelegate.m in Sources */,
 				EF783F152008763600454EB6 /* DZMSegmentedControl.swift in Sources */,
@@ -1115,11 +1162,11 @@
 				EF783F112008763600454EB6 /* String+Extension.swift in Sources */,
 				EF783F392008763600454EB6 /* DZMCursorView.swift in Sources */,
 				EF783F222008763600454EB6 /* DZMReadOperation.swift in Sources */,
-				0AB666B41F24360B00329AE1 /* UIButton+Helper.m in Sources */,
 				EF0893F01FE67D4D00BFB882 /* PHRishEditModel.m in Sources */,
 				0AB666B91F24360B00329AE1 /* HSDownloadManager.m in Sources */,
 				0AB666B71F24360B00329AE1 /* UIView+Helper.m in Sources */,
 				2A6FC3CF1D2DF16E0006CBE2 /* UIViewAdditions.m in Sources */,
+				EFD0D46720BD56B2002BBEFB /* PHCarouselView.m in Sources */,
 				EF055EA11FFE204E0095936D /* PHRishShowWebView.m in Sources */,
 				EFB6C5292021AFBB00039D62 /* SegViewController.m in Sources */,
 				EF783F232008763600454EB6 /* DZMReadParser.swift in Sources */,
@@ -1127,15 +1174,14 @@
 				EF783F272008763600454EB6 /* DZMReadController.swift in Sources */,
 				EFB6C5302021B3E900039D62 /* NavigationController.m in Sources */,
 				0AB666C01F24360B00329AE1 /* PHDownLoader.m in Sources */,
-				EFB6C53B2021BED200039D62 /* PublishViewController.m in Sources */,
 				EF5D14B21FE3D368003592B2 /* PHBaseViewController.m in Sources */,
 				0AB666C41F24360B00329AE1 /* YanButton.m in Sources */,
+				EFD0D46D20BD573B002BBEFB /* PHTabbarView.m in Sources */,
 				2A0CDBDC1D6EC9AD0012D04A /* PHCalendarContentVC.m in Sources */,
 				EF783F1E2008763600454EB6 /* UIView+YGPulseView.m in Sources */,
 				EF783F2D2008763600454EB6 /* DZMRMStatusView.swift in Sources */,
 				EF0893ED1FE6717400BFB882 /* PHImagePickerController.m in Sources */,
 				2A6FC3CD1D2DF16E0006CBE2 /* PHCellView.m in Sources */,
-				0AB666C31F24360B00329AE1 /* PHTabbar.m in Sources */,
 				EF783F292008763600454EB6 /* DZMRMColorView.swift in Sources */,
 				EF783F122008763600454EB6 /* UIScrollView+Extension.swift in Sources */,
 				0AB666AF1F24360B00329AE1 /* PHPush.m in Sources */,
@@ -1146,17 +1192,17 @@
 				EFB6C5382021B7FB00039D62 /* InfoViewController.m in Sources */,
 				0AB666B31F24360B00329AE1 /* NSString+Helper.m in Sources */,
 				EF783F352008763600454EB6 /* DZMReadChapterListModel.swift in Sources */,
+				EFD0D47320BD580A002BBEFB /* UIButton+Helper.m in Sources */,
 				EF783F242008763600454EB6 /* DZMReadViewController.swift in Sources */,
 				EF783F3A2008763600454EB6 /* DZMReadView.swift in Sources */,
-				EFB6C5252021AEFC00039D62 /* PHSegmentViewController.m in Sources */,
 				0AB666BF1F24360B00329AE1 /* PHCustomTabbarController.m in Sources */,
 				EF783F142008763600454EB6 /* UITableView+Extension.swift in Sources */,
 				EF783F302008763600454EB6 /* DZMRMTopView.swift in Sources */,
 				EF783F202008763600454EB6 /* DZMBatteryView.swift in Sources */,
 				0AB666B51F24360B00329AE1 /* UIImage+Helper.m in Sources */,
 				0AB666C21F24360B00329AE1 /* PHSocketManager.m in Sources */,
-				EFB6C53E2021BEE100039D62 /* OtherViewController.m in Sources */,
 				EF783F1D2008763600454EB6 /* ASValueTrackingSlider.m in Sources */,
+				EFD0D47720BD58D3002BBEFB /* MainTableViewCell.m in Sources */,
 				EF783F212008763600454EB6 /* DZMViewController.swift in Sources */,
 				EF783F132008763600454EB6 /* UIPageViewController+Extension.swift in Sources */,
 				0AB666BB1F24360B00329AE1 /* NSString+Hash.m in Sources */,
@@ -1168,9 +1214,11 @@
 				EF783F192008763600454EB6 /* DZMGlobalProperty.swift in Sources */,
 				EF783F322008763600454EB6 /* DZMRMLightView.swift in Sources */,
 				EF783F2F2008763600454EB6 /* DZMReadMenu.swift in Sources */,
+				EFD0D46320BD55EA002BBEFB /* H5ViewController.swift in Sources */,
 				EF783F172008763600454EB6 /* DZMUserDefaults.swift in Sources */,
 				0AB666B01F24360B00329AE1 /* RunTimeHelper.m in Sources */,
 				0AB666B11F24360B00329AE1 /* LatexView.m in Sources */,
+				EFD0D47020BD5795002BBEFB /* FirstTableViewController.m in Sources */,
 				EFB6C52D2021B39B00039D62 /* TabBarController.m in Sources */,
 				EF783F312008763600454EB6 /* DZMRMBaseView.swift in Sources */,
 				EF3427451FE64CEC00F80440 /* PHRishEditCellView.m in Sources */,

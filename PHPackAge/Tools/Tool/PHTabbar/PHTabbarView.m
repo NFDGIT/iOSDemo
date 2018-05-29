@@ -8,41 +8,44 @@
 
 
 
-#import "PHTabbar.h"
+#import "PHTabbarView.h"
 //#import "UIViewAdditions.h"
 //#import "PHDefine.h"
 
 
 
-@interface PHTabbar ()<UIScrollViewDelegate>
+@interface PHTabbarView ()<UIScrollViewDelegate>
 @property (nonatomic,strong)NSArray<NSString *> * titles;
 
 
 @property (nonatomic,strong)UIColor * themeColor;
+@property (nonatomic,strong)UIFont * font;
 
 @property (nonatomic,strong)UIImageView * titleLine;
 @property (nonatomic,assign)float titleLineWithTem;
 @end
-@implementation PHTabbar
+@implementation PHTabbarView
 
-+(instancetype)insWithTitles:(NSArray *)titles type:(TabbarType)type themeColor:(UIColor*)themeColor frame:(CGRect)frame{
-    PHTabbar * tabbar=[[PHTabbar alloc]initWithFrame:frame];
++(instancetype)insWithTitles:(NSArray *)titles type:(PHTabbarType)type font:(UIFont *)font themeColor:(UIColor*)themeColor frame:(CGRect)frame{
+    PHTabbarView * tabbar=[[PHTabbarView alloc]initWithFrame:frame];
     tabbar.index=0;
     tabbar.tabbarType=type;
     tabbar.titles=titles;
     tabbar.themeColor=themeColor;
+    tabbar.font = font;
     
     [tabbar newView];
     [tabbar reshViewWithAnimaiton:YES];
     return tabbar;
 }
--(UIScrollView *)initWithTitles:(NSArray *)titles type:(TabbarType)type themeColor:(UIColor*)themeColor frame:(CGRect)frame{
+-(UIScrollView *)initWithTitles:(NSArray *)titles type:(PHTabbarType)type font:(UIFont *)font  themeColor:(UIColor*)themeColor frame:(CGRect)frame{
     if (self=[super initWithFrame:frame]) {
         self.isDrag=YES; //  解决 实现滑动scrollView的偏移量与标题的偏移量同步时 点击按钮也会调动偏移的代理方法
         self.index=0;
         self.tabbarType=type;
         self.titles=titles;
         self.themeColor=themeColor;
+        self.font = font;
         
         [self newView];
         [self reshViewWithAnimaiton:YES];
@@ -78,6 +81,7 @@
         CGFloat bX=bW*i;
         CGFloat bY=0;
         UIButton * btn=[[UIButton alloc]initWithFrame:CGRectMake(bX, bY, bW, bH)];
+        btn.titleLabel.font = self.font;
         
         [self addSubview:btn];
         btn.tag=100+i;
@@ -174,7 +178,7 @@
     //    _titleLine.top=self.height-20-2;
     
     _titleLine.bottom=self.height;
-    _titleLine.backgroundColor=_themeColor;
+    _titleLine.backgroundColor=self.themeColor;
     [self addSubview:_titleLine];
     
     
@@ -210,7 +214,7 @@
 
 
 //// 设置 格式
--(void)changeType:(TabbarType)type{
+-(void)changeType:(PHTabbarType)type{
     _tabbarType=type;
     [self newView];
     [self reshViewWithAnimaiton:NO];
@@ -313,6 +317,20 @@
     }
 }
 
+#pragma mark -- 属性的 set get 方法
+-(UIFont *)font{
+    if (!_font) {
+        _font = [UIFont systemFontOfSize:14 weight:NO];
+    }
+    return _font;
+}
+-(UIColor *)themeColor
+{
+    if (!_themeColor) {
+        _themeColor = [UIColor orangeColor];
+    }
+    return _themeColor;
+}
 /*
  // Only override drawRect: if you perform custom drawing.
  // An empty implementation adversely affects performance during animation.

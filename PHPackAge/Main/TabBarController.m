@@ -15,7 +15,9 @@
 //#import "OtherViewController.h"
 //#import "Other1ViewController.h"
 #import "SegViewController.h"
-#import "PublishViewController.h"
+#import "HomePageViewController.h"
+#import "ViewController.h"
+#import "PHPackage-Swift.h"
 
 
 @interface TabBarController ()<UITabBarControllerDelegate>
@@ -36,9 +38,9 @@
     
     
     _tabbarItems =  [NSMutableArray array];
-    [_tabbarItems addObject:@{@"img":@"icon",@"title":@"首页",@"controller":NSStringFromClass([SegViewController class])}];
-    [_tabbarItems addObject:@{@"img":@"icon",@"title":@"猎头",@"controller":NSStringFromClass([SegViewController class])}];
-    [_tabbarItems addObject:@{@"img":@"icon",@"title":@"发布",@"controller":NSStringFromClass([PublishViewController class])}];
+    [_tabbarItems addObject:@{@"img":@"icon",@"title":@"首页",@"controller":NSStringFromClass([HomePageViewController class])}];
+    [_tabbarItems addObject:@{@"img":@"icon",@"title":@"猎头",@"controller":NSStringFromClass([ViewController class])}];
+    [_tabbarItems addObject:@{@"img":@"icon",@"title":@"H5",@"controller":NSStringFromClass([H5ViewController class])}];
     [_tabbarItems addObject:@{@"img":@"icon",@"title":@"分类",@"controller":NSStringFromClass([SegViewController class])}];
     [_tabbarItems addObject:@{@"img":@"icon",@"title":@"我的",@"controller":NSStringFromClass([SegViewController class])}];
     
