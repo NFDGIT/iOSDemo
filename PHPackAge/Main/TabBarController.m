@@ -17,7 +17,7 @@
 #import "SegViewController.h"
 #import "HomePageViewController.h"
 #import "ViewController.h"
-#import "PHPackage-Swift.h"
+#import "PHPackAge-Swift.h"
 
 
 @interface TabBarController ()<UITabBarControllerDelegate>
@@ -78,22 +78,9 @@
 }
 #pragma mark -- delegate
 -(BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
-    NSUInteger index = [tabBarController.viewControllers indexOfObject:viewController];
+//    NSUInteger index = [tabBarController.viewControllers indexOfObject:viewController];
     
-    
-    
-    if (index == 2) {
-        NSDictionary * currentDic =_tabbarItems[2];
-        NSString * controllerString = [NSString stringWithFormat:@"%@",currentDic[@"controller"]];
-        Class Class = NSClassFromString(controllerString);
-        UIViewController * controller = [Class new];
-        
-        [self presentViewController:controller animated:YES completion:^{
-            
-        }];
-        return NO;
-    }
-    
+
     return YES;
 }
 
