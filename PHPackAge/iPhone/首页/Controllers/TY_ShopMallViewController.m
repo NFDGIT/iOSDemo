@@ -6,17 +6,23 @@
 //  Copyright © 2018年 wdx. All rights reserved.
 //
 
-#import "HomePageViewController.h"
-#import "PHCarouselView.h"
+#import "TY_ShopMallViewController.h"
+
+#import "TY_ShopMallTitleModel.h"
+
+/*
+ 控制器
+ */
 #import "PHSegmentViewController.h"
 #import "FirstTableViewController.h"
+#import "TY_SearchCommissionerViewController.h" //搜索服务专员
 #import "UIButton+Helper.h"
 
-@interface HomePageViewController ()<UIScrollViewDelegate>
+@interface TY_ShopMallViewController ()<UIScrollViewDelegate>
 @property (nonatomic,strong)PHSegmentViewController * segment;
 @end
 
-@implementation HomePageViewController
+@implementation TY_ShopMallViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,28 +35,36 @@
     // Do any additional setup after loading the view.
 }
 -(void)initUI{
-    
-    
-    
-    
+    self.automaticallyAdjustsScrollViewInsets = NO;
     UIScrollView * scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 64, self.view.width, self.view.height-64)];
     scrollView.delegate = self;
     [self.view addSubview:scrollView];
     
     
+    UIView * topView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, 200)];
+    topView.backgroundColor = [UIColor colorWithRed:0.8 green:0.8 blue:0.8 alpha:0.8];
+    [scrollView addSubview:topView];
+
     
     
-    self.automaticallyAdjustsScrollViewInsets = NO;
     
-    PHCarouselView * carouselView =  [[PHCarouselView alloc]init];
-    carouselView.datas = @[@"",@"",@"",@"",@"",@"",@"",@"",@""];
-    carouselView.top = 0;
-    [scrollView addSubview:carouselView];
+    
+    UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 100, 20)];
+    [btn setTitle:@"更多服务专员" forState:UIControlStateNormal];
+    [topView addSubview:btn];
+    btn.bottom = topView.height - 10;
+    btn.right = topView.width - 10;
+    [btn addTarget:self action:@selector(moreCommissioner) forControlEvents:UIControlEventTouchUpInside];
+//    PHCarouselView * carouselView =  [[PHCarouselView alloc]init];
+//    carouselView.datas = @[@"",@"",@"",@"",@"",@"",@"",@"",@""];
+//    carouselView.top = 0;
+//    [scrollView addSubview:carouselView];
     
     
     
     PHSegmentViewController * segment = [PHSegmentViewController new];
     segment.transitionStyle = UIPageViewControllerTransitionStyleScroll;
+    segment.tabbarViewType = TabbarTypeScrollUnderline;
     segment.titleColor = [UIColor redColor];
     segment.titleFont = [UIFont systemFontOfSize:20 weight:YES];
     segment.titleViewHeight = 40;
@@ -60,7 +74,7 @@
     
     UIButton *leftBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
     leftBtn.backgroundColor  =[UIColor redColor];
-    segment.leftBtn = leftBtn;
+    segment.rightBtn = leftBtn;
     //    segment.leftBtn addTarget:self action:@selector(<#selector#>) forControlEvents:<#(UIControlEvents)#>
     
 
@@ -76,9 +90,33 @@
     //    rightBtn.backgroundColor  =[UIColor redColor];
     //    segment.rightBtn = rightBtn;
     
-    for (int i = 0; i < 2; i ++) {
+    
+    
+    
+    TY_ShopMallTitleModel * model = [TY_ShopMallTitleModel new];
+    model.title = @"全部";
+    TY_ShopMallTitleModel * model1 = [TY_ShopMallTitleModel new];
+    model1.title = @"推荐";
+    TY_ShopMallTitleModel * model2 = [TY_ShopMallTitleModel new];
+    model2.title = @"美妆";
+    TY_ShopMallTitleModel * model3 = [TY_ShopMallTitleModel new];
+    model3.title = @"健康";
+    TY_ShopMallTitleModel * model4 = [TY_ShopMallTitleModel new];
+    model4.title = @"娱乐";
+    TY_ShopMallTitleModel * model5 = [TY_ShopMallTitleModel new];
+    model5.title = @"时尚";
+    TY_ShopMallTitleModel * model6 = [TY_ShopMallTitleModel new];
+    model6.title = @"关注";
+    TY_ShopMallTitleModel * model7 = [TY_ShopMallTitleModel new];
+    model7.title = @"军事";
+    
+    NSArray * titles = @[model,model1,model2,model3,model4,model5,model6,model7];
+    
+    for (int i = 0; i < titles.count; i ++) {
+        TY_ShopMallTitleModel * currentModel = titles[i];
+        
         FirstTableViewController * VC = [FirstTableViewController new];
-        VC.title = [NSString stringWithFormat:@"第%d",i];
+        VC.title = [NSString stringWithFormat:@"%@",currentModel.title];
         
         
         
@@ -113,13 +151,20 @@
     
     
     [self addChildViewController:segment];
-    segment.view.top = carouselView.bottom;
+    segment.view.top = topView.bottom;
     segment.view.height = self.view.height- 64;
     [self.view addSubview:scrollView];
     [scrollView addSubview:segment.view];
     scrollView.contentSize = CGSizeMake(scrollView.width, segment.view.bottom);
     
 }
+
+#pragma mark -- 点击事件
+-(void)moreCommissioner{
+    TY_SearchCommissionerViewController * commissioner = [TY_SearchCommissionerViewController new];
+    [self.navigationController pushViewController:commissioner animated:YES];
+}
+
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     [_segment judgeContentWhetherScroll];
     

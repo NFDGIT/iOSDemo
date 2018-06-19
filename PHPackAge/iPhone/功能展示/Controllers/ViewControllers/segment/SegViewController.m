@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     NSMutableArray * datas = [NSMutableArray array];
     [datas addObject:@{@"title":@"全部"}];
     [datas addObject:@{@"title":@"趣生活"}];
@@ -26,7 +28,7 @@
     
     
     PHSegmentViewController * segment = [PHSegmentViewController new];
-    
+    segment.transitionStyle = UIPageViewControllerTransitionStyleScroll;
     
     NSInteger i = 0;
     for (NSDictionary * dic in datas) {
@@ -42,7 +44,7 @@
     
     [segment.controllers removeLastObject];
     segment.view.frame = self.view.frame;
-    
+
     [self addChildViewController:segment];
     segment.view.top = 64;
     segment.view.height = self.view.height - 64;

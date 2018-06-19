@@ -215,7 +215,7 @@
     CGFloat superOffSetY = superScroll.contentOffset.y;
     CGFloat selfTop      = self.view.top;
     
-    if (superOffSetY > selfTop) {
+    if (superOffSetY >= selfTop) {
         
         superScroll.contentOffset = CGPointMake(superScroll.contentOffset.x, selfTop);
         return YES;

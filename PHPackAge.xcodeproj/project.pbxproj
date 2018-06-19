@@ -105,10 +105,14 @@
 		EF783F3A2008763600454EB6 /* DZMReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783F0E2008763600454EB6 /* DZMReadView.swift */; };
 		EF783F3D200883AD00454EB6 /* ReaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF783F3C200883AD00454EB6 /* ReaViewController.swift */; };
 		EF8F4CE82019A1560064CF4A /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8F4CE72019A1560064CF4A /* base64.m */; };
+		EF90C3C720BE8A5000EA5CF1 /* TY_GoodsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF90C3C620BE8A5000EA5CF1 /* TY_GoodsTableViewCell.m */; };
+		EF90C3CA20BE8CBA00EA5CF1 /* TY_SearchCommissionerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF90C3C920BE8CBA00EA5CF1 /* TY_SearchCommissionerViewController.m */; };
+		EF90C3CE20BE8EA100EA5CF1 /* TY_ShopMallTitleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF90C3CD20BE8EA100EA5CF1 /* TY_ShopMallTitleModel.m */; };
+		EF90C3D420BE939900EA5CF1 /* TY_ShopMallContentCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF90C3D320BE939900EA5CF1 /* TY_ShopMallContentCellModel.m */; };
 		EFB6C5292021AFBB00039D62 /* SegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB6C5282021AFBB00039D62 /* SegViewController.m */; };
 		EFB6C52D2021B39B00039D62 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB6C52C2021B39B00039D62 /* TabBarController.m */; };
 		EFB6C5302021B3E900039D62 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB6C52F2021B3E900039D62 /* NavigationController.m */; };
-		EFD0D45F20BD55AE002BBEFB /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D45D20BD55AE002BBEFB /* HomePageViewController.m */; };
+		EFD0D45F20BD55AE002BBEFB /* TY_ShopMallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D45D20BD55AE002BBEFB /* TY_ShopMallViewController.m */; };
 		EFD0D46320BD55EA002BBEFB /* H5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D46220BD55EA002BBEFB /* H5ViewController.swift */; };
 		EFD0D46720BD56B2002BBEFB /* PHCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D46620BD56B2002BBEFB /* PHCarouselView.m */; };
 		EFD0D46A20BD5707002BBEFB /* PHSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D46820BD5707002BBEFB /* PHSegmentViewController.m */; };
@@ -116,6 +120,13 @@
 		EFD0D47020BD5795002BBEFB /* FirstTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D46E20BD5794002BBEFB /* FirstTableViewController.m */; };
 		EFD0D47320BD580A002BBEFB /* UIButton+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D47120BD5809002BBEFB /* UIButton+Helper.m */; };
 		EFD0D47720BD58D3002BBEFB /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D47620BD58D3002BBEFB /* MainTableViewCell.m */; };
+		EFD0D47D20BD5D60002BBEFB /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = EFD0D47C20BD5D60002BBEFB /* index.html */; };
+		EFD0D47F20BD5D82002BBEFB /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = EFD0D47E20BD5D82002BBEFB /* main.js */; };
+		EFD0D48120BD5D9B002BBEFB /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = EFD0D48020BD5D9B002BBEFB /* main.css */; };
+		EFD0D48720BD5F61002BBEFB /* DouYinPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D48620BD5F61002BBEFB /* DouYinPlayViewController.m */; };
+		EFF8D7B720D8957E00A20CEE /* IMMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF8D7B620D8957E00A20CEE /* IMMessageModel.m */; };
+		EFF8D7BA20D897FA00A20CEE /* PHSocketTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF8D7B920D897FA00A20CEE /* PHSocketTool.m */; };
+		EFFB0A6020CF9B0500A48A4E /* IMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFB0A5F20CF9B0500A48A4E /* IMViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -274,6 +285,14 @@
 		EF783F3C200883AD00454EB6 /* ReaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaViewController.swift; sourceTree = "<group>"; };
 		EF8F4CE62019A1550064CF4A /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
 		EF8F4CE72019A1560064CF4A /* base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = base64.m; sourceTree = "<group>"; };
+		EF90C3C520BE8A5000EA5CF1 /* TY_GoodsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TY_GoodsTableViewCell.h; sourceTree = "<group>"; };
+		EF90C3C620BE8A5000EA5CF1 /* TY_GoodsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TY_GoodsTableViewCell.m; sourceTree = "<group>"; };
+		EF90C3C820BE8CBA00EA5CF1 /* TY_SearchCommissionerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TY_SearchCommissionerViewController.h; sourceTree = "<group>"; };
+		EF90C3C920BE8CBA00EA5CF1 /* TY_SearchCommissionerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TY_SearchCommissionerViewController.m; sourceTree = "<group>"; };
+		EF90C3CC20BE8EA100EA5CF1 /* TY_ShopMallTitleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TY_ShopMallTitleModel.h; sourceTree = "<group>"; };
+		EF90C3CD20BE8EA100EA5CF1 /* TY_ShopMallTitleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TY_ShopMallTitleModel.m; sourceTree = "<group>"; };
+		EF90C3D220BE939900EA5CF1 /* TY_ShopMallContentCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TY_ShopMallContentCellModel.h; sourceTree = "<group>"; };
+		EF90C3D320BE939900EA5CF1 /* TY_ShopMallContentCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TY_ShopMallContentCellModel.m; sourceTree = "<group>"; };
 		EFB6C5262021AF2800039D62 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		EFB6C5272021AFBB00039D62 /* SegViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegViewController.h; sourceTree = "<group>"; };
 		EFB6C5282021AFBB00039D62 /* SegViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegViewController.m; sourceTree = "<group>"; };
@@ -281,8 +300,8 @@
 		EFB6C52C2021B39B00039D62 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		EFB6C52E2021B3E900039D62 /* NavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		EFB6C52F2021B3E900039D62 /* NavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
-		EFD0D45D20BD55AE002BBEFB /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
-		EFD0D45E20BD55AE002BBEFB /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		EFD0D45D20BD55AE002BBEFB /* TY_ShopMallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TY_ShopMallViewController.m; sourceTree = "<group>"; };
+		EFD0D45E20BD55AE002BBEFB /* TY_ShopMallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TY_ShopMallViewController.h; sourceTree = "<group>"; };
 		EFD0D46220BD55EA002BBEFB /* H5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = H5ViewController.swift; path = ../../../../../../../Documents/H5ViewController.swift; sourceTree = "<group>"; };
 		EFD0D46520BD56B2002BBEFB /* PHCarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHCarouselView.h; sourceTree = "<group>"; };
 		EFD0D46620BD56B2002BBEFB /* PHCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHCarouselView.m; sourceTree = "<group>"; };
@@ -296,6 +315,17 @@
 		EFD0D47220BD5809002BBEFB /* UIButton+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Helper.h"; sourceTree = "<group>"; };
 		EFD0D47520BD58D3002BBEFB /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
 		EFD0D47620BD58D3002BBEFB /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
+		EFD0D47C20BD5D60002BBEFB /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		EFD0D47E20BD5D82002BBEFB /* main.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		EFD0D48020BD5D9B002BBEFB /* main.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = main.css; sourceTree = "<group>"; };
+		EFD0D48520BD5F61002BBEFB /* DouYinPlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DouYinPlayViewController.h; sourceTree = "<group>"; };
+		EFD0D48620BD5F61002BBEFB /* DouYinPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DouYinPlayViewController.m; sourceTree = "<group>"; };
+		EFF8D7B520D8957E00A20CEE /* IMMessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMMessageModel.h; sourceTree = "<group>"; };
+		EFF8D7B620D8957E00A20CEE /* IMMessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMMessageModel.m; sourceTree = "<group>"; };
+		EFF8D7B820D897FA00A20CEE /* PHSocketTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHSocketTool.h; sourceTree = "<group>"; };
+		EFF8D7B920D897FA00A20CEE /* PHSocketTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHSocketTool.m; sourceTree = "<group>"; };
+		EFFB0A5E20CF9B0500A48A4E /* IMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMViewController.h; sourceTree = "<group>"; };
+		EFFB0A5F20CF9B0500A48A4E /* IMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -621,6 +651,8 @@
 		EF5D14B31FE3D785003592B2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				EFFB0A5D20CF9AD000A48A4E /* 即时通讯 */,
+				EFD0D48220BD5F1F002BBEFB /* 抖音 */,
 				EFB6C5222021AED200039D62 /* segment */,
 				EFB6C5212021AEC300039D62 /* 日历 */,
 				EF6EBFE11FFCAF6900814891 /* 测试 */,
@@ -855,6 +887,17 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		EF90C3CB20BE8E6400EA5CF1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF90C3CC20BE8EA100EA5CF1 /* TY_ShopMallTitleModel.h */,
+				EF90C3CD20BE8EA100EA5CF1 /* TY_ShopMallTitleModel.m */,
+				EF90C3D220BE939900EA5CF1 /* TY_ShopMallContentCellModel.h */,
+				EF90C3D320BE939900EA5CF1 /* TY_ShopMallContentCellModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		EFB6C5202021AE9100039D62 /* PHSegment */ = {
 			isa = PBXGroup;
 			children = (
@@ -921,21 +964,24 @@
 		EFB6C5332021B4EA00039D62 /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				EF90C3CB20BE8E6400EA5CF1 /* Models */,
 				EFD0D47420BD58B1002BBEFB /* Views */,
-				EFB6C5342021B59000039D62 /* controllers */,
+				EFB6C5342021B59000039D62 /* Controllers */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
 		};
-		EFB6C5342021B59000039D62 /* controllers */ = {
+		EFB6C5342021B59000039D62 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				EFD0D46F20BD5795002BBEFB /* FirstTableViewController.h */,
 				EFD0D46E20BD5794002BBEFB /* FirstTableViewController.m */,
-				EFD0D45E20BD55AE002BBEFB /* HomePageViewController.h */,
-				EFD0D45D20BD55AE002BBEFB /* HomePageViewController.m */,
+				EFD0D45E20BD55AE002BBEFB /* TY_ShopMallViewController.h */,
+				EFD0D45D20BD55AE002BBEFB /* TY_ShopMallViewController.m */,
+				EF90C3C820BE8CBA00EA5CF1 /* TY_SearchCommissionerViewController.h */,
+				EF90C3C920BE8CBA00EA5CF1 /* TY_SearchCommissionerViewController.m */,
 			);
-			path = controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		EFB6C5352021B5AD00039D62 /* Controllers */ = {
@@ -951,6 +997,7 @@
 		EFD0D46020BD55C0002BBEFB /* 网页 */ = {
 			isa = PBXGroup;
 			children = (
+				EFD0D47820BD5C36002BBEFB /* Views */,
 				EFD0D46120BD55CC002BBEFB /* Controllers */,
 			);
 			path = "网页";
@@ -978,8 +1025,50 @@
 			children = (
 				EFD0D47520BD58D3002BBEFB /* MainTableViewCell.h */,
 				EFD0D47620BD58D3002BBEFB /* MainTableViewCell.m */,
+				EF90C3C520BE8A5000EA5CF1 /* TY_GoodsTableViewCell.h */,
+				EF90C3C620BE8A5000EA5CF1 /* TY_GoodsTableViewCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		EFD0D47820BD5C36002BBEFB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFD0D47B20BD5D28002BBEFB /* H5 */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EFD0D47B20BD5D28002BBEFB /* H5 */ = {
+			isa = PBXGroup;
+			children = (
+				EFD0D47C20BD5D60002BBEFB /* index.html */,
+				EFD0D48020BD5D9B002BBEFB /* main.css */,
+				EFD0D47E20BD5D82002BBEFB /* main.js */,
+			);
+			path = H5;
+			sourceTree = "<group>";
+		};
+		EFD0D48220BD5F1F002BBEFB /* 抖音 */ = {
+			isa = PBXGroup;
+			children = (
+				EFD0D48520BD5F61002BBEFB /* DouYinPlayViewController.h */,
+				EFD0D48620BD5F61002BBEFB /* DouYinPlayViewController.m */,
+			);
+			path = "抖音";
+			sourceTree = "<group>";
+		};
+		EFFB0A5D20CF9AD000A48A4E /* 即时通讯 */ = {
+			isa = PBXGroup;
+			children = (
+				EFFB0A5E20CF9B0500A48A4E /* IMViewController.h */,
+				EFFB0A5F20CF9B0500A48A4E /* IMViewController.m */,
+				EFF8D7B520D8957E00A20CEE /* IMMessageModel.h */,
+				EFF8D7B620D8957E00A20CEE /* IMMessageModel.m */,
+				EFF8D7B820D897FA00A20CEE /* PHSocketTool.h */,
+				EFF8D7B920D897FA00A20CEE /* PHSocketTool.m */,
+			);
+			path = "即时通讯";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1016,7 +1105,7 @@
 				TargetAttributes = {
 					2A6FC3AA1D2DF1430006CBE2 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = Z9Q5DTACHN;
+						DevelopmentTeam = 2C6629VM94;
 					};
 				};
 			};
@@ -1043,12 +1132,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFD0D47D20BD5D60002BBEFB /* index.html in Resources */,
 				2A45CA531D62A91500F7D9DA /* example.html in Resources */,
+				EFD0D48120BD5D9B002BBEFB /* main.css in Resources */,
 				2A797ECE1D6DA072008B0459 /* 111.jpg in Resources */,
 				2A6FC3BE1D2DF1430006CBE2 /* LaunchScreen.storyboard in Resources */,
 				2A5DEA8E1D65482E00155CAC /* index.w.html in Resources */,
 				2A6FC3BB1D2DF1430006CBE2 /* Assets.xcassets in Resources */,
 				2A6FC3B91D2DF1430006CBE2 /* Main.storyboard in Resources */,
+				EFD0D47F20BD5D82002BBEFB /* main.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1116,7 +1208,7 @@
 			files = (
 				2AB68FAF1D5C3CE100C98438 /* SuperViewController.m in Sources */,
 				EF783F342008763600454EB6 /* DZMReadModel.swift in Sources */,
-				EFD0D45F20BD55AE002BBEFB /* HomePageViewController.m in Sources */,
+				EFD0D45F20BD55AE002BBEFB /* TY_ShopMallViewController.m in Sources */,
 				EF035BC6200C7C9F0071EED4 /* DemoTableViewCell.m in Sources */,
 				2A40CB671D5AB2BB00BF7A80 /* UIImage+Helper.m in Sources */,
 				EF783F2B2008763600454EB6 /* DZMRMFuncView.swift in Sources */,
@@ -1159,9 +1251,12 @@
 				EF783F222008763600454EB6 /* DZMReadOperation.swift in Sources */,
 				EF0893F01FE67D4D00BFB882 /* PHRishEditModel.m in Sources */,
 				0AB666B91F24360B00329AE1 /* HSDownloadManager.m in Sources */,
+				EF90C3C720BE8A5000EA5CF1 /* TY_GoodsTableViewCell.m in Sources */,
+				EFF8D7BA20D897FA00A20CEE /* PHSocketTool.m in Sources */,
 				0AB666B71F24360B00329AE1 /* UIView+Helper.m in Sources */,
 				2A6FC3CF1D2DF16E0006CBE2 /* UIViewAdditions.m in Sources */,
 				EFD0D46720BD56B2002BBEFB /* PHCarouselView.m in Sources */,
+				EF90C3D420BE939900EA5CF1 /* TY_ShopMallContentCellModel.m in Sources */,
 				EF055EA11FFE204E0095936D /* PHRishShowWebView.m in Sources */,
 				EFB6C5292021AFBB00039D62 /* SegViewController.m in Sources */,
 				EF783F232008763600454EB6 /* DZMReadParser.swift in Sources */,
@@ -1178,6 +1273,7 @@
 				EF0893ED1FE6717400BFB882 /* PHImagePickerController.m in Sources */,
 				2A6FC3CD1D2DF16E0006CBE2 /* PHCellView.m in Sources */,
 				EF783F292008763600454EB6 /* DZMRMColorView.swift in Sources */,
+				EFD0D48720BD5F61002BBEFB /* DouYinPlayViewController.m in Sources */,
 				EF783F122008763600454EB6 /* UIScrollView+Extension.swift in Sources */,
 				0AB666AF1F24360B00329AE1 /* PHPush.m in Sources */,
 				0AB666B21F24360B00329AE1 /* LaunchAdView.m in Sources */,
@@ -1185,10 +1281,12 @@
 				2A6FC3B01D2DF1430006CBE2 /* main.m in Sources */,
 				EF783F252008763600454EB6 /* DZMReadConfigure.swift in Sources */,
 				0AB666B31F24360B00329AE1 /* NSString+Helper.m in Sources */,
+				EFFB0A6020CF9B0500A48A4E /* IMViewController.m in Sources */,
 				EF783F352008763600454EB6 /* DZMReadChapterListModel.swift in Sources */,
 				EFD0D47320BD580A002BBEFB /* UIButton+Helper.m in Sources */,
 				EF783F242008763600454EB6 /* DZMReadViewController.swift in Sources */,
 				EF783F3A2008763600454EB6 /* DZMReadView.swift in Sources */,
+				EF90C3CE20BE8EA100EA5CF1 /* TY_ShopMallTitleModel.m in Sources */,
 				0AB666BF1F24360B00329AE1 /* PHCustomTabbarController.m in Sources */,
 				EF783F142008763600454EB6 /* UITableView+Extension.swift in Sources */,
 				EF783F302008763600454EB6 /* DZMRMTopView.swift in Sources */,
@@ -1201,12 +1299,14 @@
 				EF783F132008763600454EB6 /* UIPageViewController+Extension.swift in Sources */,
 				0AB666BB1F24360B00329AE1 /* NSString+Hash.m in Sources */,
 				2A54E44C1D5D7828008CA6D2 /* PHPrinter.m in Sources */,
+				EFF8D7B720D8957E00A20CEE /* IMMessageModel.m in Sources */,
 				EF8F4CE82019A1560064CF4A /* base64.m in Sources */,
 				EF783F382008763600454EB6 /* DZMReadViewCell.swift in Sources */,
 				EF783F332008763600454EB6 /* DZMReadRecordModel.swift in Sources */,
 				EF783F102008763600454EB6 /* UIView+Extension.swift in Sources */,
 				EF783F192008763600454EB6 /* DZMGlobalProperty.swift in Sources */,
 				EF783F322008763600454EB6 /* DZMRMLightView.swift in Sources */,
+				EF90C3CA20BE8CBA00EA5CF1 /* TY_SearchCommissionerViewController.m in Sources */,
 				EF783F2F2008763600454EB6 /* DZMReadMenu.swift in Sources */,
 				EFD0D46320BD55EA002BBEFB /* H5ViewController.swift in Sources */,
 				EF783F172008763600454EB6 /* DZMUserDefaults.swift in Sources */,
@@ -1329,7 +1429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = Z9Q5DTACHN;
+				DEVELOPMENT_TEAM = 2C6629VM94;
 				GCC_PREFIX_HEADER = PHPackAge/Main/PrefixHeader.pch;
 				INFOPLIST_FILE = PHPackAge/Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1346,7 +1446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = Z9Q5DTACHN;
+				DEVELOPMENT_TEAM = 2C6629VM94;
 				GCC_PREFIX_HEADER = PHPackAge/Main/PrefixHeader.pch;
 				INFOPLIST_FILE = PHPackAge/Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

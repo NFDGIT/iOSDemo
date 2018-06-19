@@ -20,6 +20,10 @@
     // Override point for customization after application launch.
     TabBarController * root = [TabBarController new];
     self.window.rootViewController = root;
+    [IQKeyboardManager sharedManager].enable = YES;
+
+    
+    
     return YES;
 }
 

@@ -7,7 +7,7 @@
 //
 
 #import "FirstTableViewController.h"
-#import "MainTableViewCell.h"
+#import "TY_GoodsTableViewCell.h"
 
 @interface FirstTableViewController ()
 //@property (nonatomic,strong)NSMutableArray * datas;
@@ -22,7 +22,7 @@
 //                                              @"hello swift \nhello swift \nhello swift \nhello swift  "
 //                                              ]];
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height) style:UITableViewStyleGrouped];
-    [self.tableView registerClass:[MainTableViewCell class] forCellReuseIdentifier:@"cell"];
+    [self.tableView registerClass:[TY_GoodsTableViewCell class] forCellReuseIdentifier:@"cell"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -49,11 +49,15 @@
     return 1;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    MainTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    TY_GoodsTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     NSString * title = _datas[indexPath.section];
     
     cell.indexPath = indexPath;
-    cell.title = title;
+    
+    
+    TY_ShopMallContentCellModel * model = [TY_ShopMallContentCellModel new];
+    model.title = @"DAFDSAFDSAF";
+    cell.model = model;
     
     
     return cell;

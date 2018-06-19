@@ -8,6 +8,6 @@
 
 #import "PHBaseViewController.h"
 
-@interface HomePageViewController : PHBaseViewController
+@interface TY_ShopMallViewController : PHBaseViewController
 
 @end

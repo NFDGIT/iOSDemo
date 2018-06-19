@@ -10,4 +10,5 @@ target 'PHPackAge' do
   pod 'SDWebImage', '~> 4.2.2'
   pod 'MJRefresh', '~> 3.1.15.1'
   pod 'Masonry', '~> 1.1.0'
+  pod 'CocoaAsyncSocket', '~> 7.6.3'
 end

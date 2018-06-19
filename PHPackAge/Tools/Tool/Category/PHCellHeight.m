@@ -24,11 +24,18 @@ static void *PH_HeightKey = &PH_HeightKey;
 //setter
 - (void)setPh_Height:(CGFloat)ph_Height {
     
-    UITableView * tableView = ((UITableView *)(self.superview));
+    UITableView * tableView = [self tableView];
     objc_setAssociatedObject(self,  &PH_HeightKey, @(ph_Height), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     [tableView setCellHeight:ph_Height indexPath:self.indexPath];
 }
-
+-(UITableView *)tableView{
+    UITableView * tableView =  ((UITableView *)(self.superview));
+    if (![tableView isKindOfClass:[UITableView class]]) {
+        tableView = (UITableView *)(tableView.superview);
+    }
+    return tableView;
+    
+}
 @end
 
 

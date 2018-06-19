@@ -24,6 +24,7 @@
 #import "PHRishEditViewController.h"
 #import "DemoViewController.h"
 #import "SegViewController.h"
+#import "IMViewController.h"
 
 
 
@@ -83,7 +84,8 @@
     _tableViewContentArray = @[@[@{@"img":@"",@"title":@"富文本编辑器",@"controller":NSStringFromClass([PHRishEditViewController class])},
                                  @{@"img":@"",@"title":@"小说",@"controller":@"noPush"},
                                 @{@"img":@"",@"title":@"日历",@"controller":NSStringFromClass([PHCalendar class])},
-                                @{@"img":@"",@"title":@"segment",@"controller":NSStringFromClass([SegViewController class])}]];
+                                @{@"img":@"",@"title":@"segment",@"controller":NSStringFromClass([SegViewController class])},
+                                 @{@"img":@"",@"title":@"IM",@"controller":NSStringFromClass([IMViewController class])}]];
  
 }
 -(void)initUI{
